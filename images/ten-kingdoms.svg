@@ -11,6 +11,7 @@
 	.st5{font-size:60px;}
 	.st6{fill:none;stroke:#2E3192;stroke-width:14;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
+<line style="fill:none;stroke:#ED1C24;stroke-width:1;" id="marker" x1="0" y1="80" x2="1" y2="1490"/>
 <line class="st0" x1="388.7" y1="760.6" x2="738.7" y2="760.6"/>
 <text transform="matrix(1 0 0 1 247.4738 771.3378)" class="st1 st2">Wu</text>
 <line class="st0" x1="738.7" y1="840.8" x2="1121.6" y2="840.8"/>
@@ -58,4 +59,26 @@
 <text transform="matrix(1 0 0 1 1258.8232 326.6002)" class="st1 st3">936-47</text>
 <text transform="matrix(1 0 0 1 1258.8232 406.5535)" class="st1 st3">947-51</text>
 <text transform="matrix(1 0 0 1 1258.8232 485.7374)" class="st1 st3">951-60</text>
+<script>
+<![CDATA[ 
+// Find your root SVG element
+var svg = document.querySelector('svg');
+
+// Create an SVGPoint for future math
+var pt = svg.createSVGPoint();
+
+// Get point in global SVG space
+function cursorPoint(evt){
+  pt.x = evt.clientX; pt.y = evt.clientY;
+  return pt.matrixTransform(svg.getScreenCTM().inverse());
+}
+
+svg.addEventListener('mousemove',function(evt){
+  var loc = cursorPoint(evt);
+  document.getElementById('marker').setAttribute("x1", loc.x);
+  document.getElementById('marker').setAttribute("x2", loc.x+1);
+},false);
+// this code thanks to http://stackoverflow.com/users/405017/phrogz
+]]>
+</script>
 </svg>
