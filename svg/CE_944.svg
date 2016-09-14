@@ -4942,7 +4942,7 @@
 <a xlink:href="CE_400.svg"><path class="maprange" d="M 2875,360 l 30,0 l 0,140 l -30,0 z"/><text x="2650" y="500" class="big">&#xA0;&#xA0;400</text></a>
 <a xlink:href="CE_560.svg"><path class="maprange" d="M 2875,500 l 30,0 l 0,160 l -30,0 z"/><text x="2650" y="660" class="big">&#xA0;&#xA0;560</text></a>
 <a xlink:href="CE_750.svg"><path class="maprange" d="M 2875,660 l 30,0 l 0,190 l -30,0 z"/><text x="2650" y="850" class="big">&#xA0;&#xA0;750</text></a>
-<a xlink:href="CE_944.svg"><path class="maprange" d="M 2875,854 l 30,0 l 0,190 l -30,0 z"/><text x="2650" y="1040" class="big">&#xA0;&#xA0;944</text></a>
+<a xlink:href="CE_944.svg"><path class="maprange" d="M 2875,850 l 30,0 l 0,194 l -30,0 z"/><text x="2650" y="1044" class="big">&#xA0;&#xA0;944</text></a>
 	<path class="options" d="M 2680,1950 l 215,0 l 0,330 l -215,0 z"/>
 	<text transform="translate(2700 2000)" class="selectors" style="fill:#d8d31e;">Options:</text>
 	<text transform="translate(2700 2060)" class="selectors" onclick="
