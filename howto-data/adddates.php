@@ -29,12 +29,12 @@ if(isset($_GET['dates']) && $_GET['dates'] != '') {
 	for ($i=0;$i<count($datearray);$i++) {
 		$era = 'CE';
 		if ($datearray[$i] < 0) $era = 'BCE';
-		$filename = $era.'_'.abs($datearray[$i]).'.svg';
+		$filename = $era.'_'.abs($datearray[$i]);
 		echo 'filename: '.$filename.'<br/>';
 	
 		#chmod($filename, 0777);
 	
-		$fp = fopen($sourcePath.$filename, "r");
+		$fp = fopen($sourcePath.$filename.'.svg', "r");
 		if (!$fp) { $message = 'Could not open file.  Check the spelling of the URI.'; }
 	
 		$message = "\n".'<text font-weight="700" font-family="\'Myriad Pro\', Arial, sans-serif" fill="#231f20" font-size="200px" color="black" transform="translate(';
@@ -45,7 +45,8 @@ if(isset($_GET['dates']) && $_GET['dates'] != '') {
 		elseif (strlen($filename) == 9) { $message .= '240'; }
 		else { $message .= '440'; }
 		$message .= '" y="0">'.$era.'</tspan></text>';
-		$message .= '<a xlink:href="../index#'.strtolower($era).abs($datearray[$i]).'"><path fill="#4D4D4F" d="M715.2,242.4l-0.2,61.1c0,5.3,4.3,8.4,12.8,9.5v5l-53.4,0.1v-4.9c4.2,0,7.4-0.8,9.7-2.3
+		//$message .= '<a xlink:href="../index#'.strtolower($era).abs($datearray[$i]).'">
+		$message .= '<a xlink:href="index#thumbnails"><path fill="#4D4D4F" d="M715.2,242.4l-0.2,61.1c0,5.3,4.3,8.4,12.8,9.5v5l-53.4,0.1v-4.9c4.2,0,7.4-0.8,9.7-2.3
 		c2.3-1.5,3.4-3.7,3.4-6.5v-41.7c0-5.3-4.3-8.5-13-9.5l0.1-6.2L715.2,242.4z M701.4,204.7c4,0,7.4,1.4,10.1,4.1
 		c2.7,2.7,4.1,6.1,4.1,10.2c0,3.9-1.4,7.2-4.1,10c-2.7,2.7-6,4.1-9.8,4.1c-4.2,0-7.6-1.3-10.4-3.8s-4.1-5.8-4.1-9.7
 		c0-4.4,1.3-7.9,4-10.7C693.8,206.1,697.2,204.7,701.4,204.7z"/></a>';
@@ -84,35 +85,6 @@ foreach ($yeargroup as $year => $val) {
 	else $message .= abs($year).'.svg"><path class="maprange" d="M 2875,'.($val[0]+100).' l 30,0 l 0,'.($year-$val[0]).' l -30,0 z"/><text x="2650" y="'.($year+100).'" class="big">&#xA0;&#xA0;'.$year.'</text></a>'."\n";
 	}
 
-/*
-	<a xlink:href="BCE_90.svg"><path class="maprange" d="M 2875,0 l 30,0 l 0,10 l -30,0 z"/><text x="2650" y="138" class="big">&#xA0;&#xA0;90</text></a>
-	<a xlink:href="CE_260.svg"><path class="maprange" d="M 2875,10 l 30,0 l 0,360 l -30,0 z"/><text x="2650" y="360" class="big">&#xA0;&#xA0;260</text></a>
-	<a xlink:href="CE_400.svg"><path class="maprange" d="M 2875,360 l 30,0 l 0,140 l -30,0 z"/><text x="2650" y="400" class="big">&#xA0;&#xA0;400</text></a>
-	<!--a xlink:href="CE_362.svg"><path class="maprange" d="M 2875,305 l 30,0 l 0,57 l -30,0 z"/><text x="2650" y="362" class="big">&#xA0;&#xA0;362</text></a>
-	<a xlink:href="CE_406.svg"><path class="maprange" d="M 2875,362 l 30,0 l 0,44 l -30,0 z"/><text x="2650" y="406" class="big">&#xA0;&#xA0;406</text></a>
-	<a xlink:href="CE_420.svg"><path class="maprange" d="M 2875,406 l 30,0 l 0,14 l -30,0 z"/><text x="2650" y="420" class="big">&#xA0;&#xA0;420</text></a>
-	<a xlink:href="CE_451.svg"><path class="maprange" d="M 2875,420 l 30,0 l 0,31 l -30,0 z"/><text x="2650" y="451" class="big">&#xA0;&#xA0;451</text></a>
-	<a xlink:href="CE_476.svg"><path class="maprange" d="M 2875,451 l 30,0 l 0,25 l -30,0 z"/><text x="2650" y="476" class="big">&#xA0;&#xA0;476</text></a>
-	<a xlink:href="CE_528.svg"><path class="maprange" d="M 2875,476 l 30,0 l 0,52 l -30,0 z"/><text x="2650" y="528" class="big">&#xA0;&#xA0;528</text></a>
-	<a xlink:href="CE_565.svg"><path class="maprange" d="M 2875,528 l 30,0 l 0,37 l -30,0 z"/><text x="2650" y="565" class="big">&#xA0;&#xA0;565</text></a>
-	<a xlink:href="CE_600.svg"><path class="maprange" d="M 2875,565 l 30,0 l 0,35 l -30,0 z"/><text x="2650" y="600" class="big">&#xA0;&#xA0;600</text></a>
-	<a xlink:href="CE_626.svg"><path class="maprange" d="M 2875,600 l 30,0 l 0,26 l -30,0 z"/><text x="2650" y="626" class="big">&#xA0;&#xA0;626</text></a>
-	<a xlink:href="CE_651.svg"><path class="maprange" d="M 2875,626 l 30,0 l 0,25 l -30,0 z"/><text x="2650" y="651" class="big">&#xA0;&#xA0;651</text></a>
-	<a xlink:href="CE_737.svg"><path class="maprange" d="M 2875,651 l 30,0 l 0,86 l -30,0 z"/><text x="2650" y="737" class="big">&#xA0;&#xA0;737</text></a>
-	<a xlink:href="CE_771.svg"><path class="maprange" d="M 2875,737 l 30,0 l 0,34 l -30,0 z"/><text x="2650" y="771" class="big">&#xA0;&#xA0;771</text></a>
-	<a xlink:href="CE_830.svg"><path class="maprange" d="M 2875,771 l 30,0 l 0,59 l -30,0 z"/><text x="2650" y="830" class="big">&#xA0;&#xA0;830</text></a>
-	<a xlink:href="CE_888.svg"><path class="maprange" d="M 2875,830 l 30,0 l 0,58 l -30,0 z"/><text x="2650" y="888" class="big">&#xA0;&#xA0;888</text></a>
-	<a xlink:href="CE_925.svg"><path class="maprange" d="M 2875,888 l 30,0 l 0,37 l -30,0 z"/><text x="2650" y="925" class="big">&#xA0;&#xA0;925</text></a>
-	<a xlink:href="CE_1000.svg"><path class="maprange" d="M 2875,925 l 30,0 l 0,75 l -30,0 z"/><text x="2650" y="1000" class="big">&#xA0;&#xA0;1000</text></a>
-	<a xlink:href="CE_1030.svg"><path class="maprange" d="M 2875,1000 l 30,0 l 0,30 l -30,0 z"/><text x="2650" y="1030" class="big">&#xA0;&#xA0;1030</text></a>
-	<a xlink:href="CE_1071.svg"><path class="maprange" d="M 2875,1030 l 30,0 l 0,41 l -30,0 z"/><text x="2650" y="1071" class="big">&#xA0;&#xA0;1071</text></a>
-	<a xlink:href="CE_1092.svg"><path class="maprange" d="M 2875,1071 l 30,0 l 0,21 l -30,0 z"/><text x="2650" y="1092" class="big">&#xA0;&#xA0;1092</text></a>
-	<a xlink:href="CE_1100.svg"><path class="maprange" d="M 2875,1092 l 30,0 l 0,8 l -30,0 z"/><text x="2650" y="1100" class="big">&#xA0;&#xA0;1100</text></a>
-	<a xlink:href="CE_1130.svg"><path class="maprange" d="M 2875,1100 l 30,0 l 0,30 l -30,0 z"/><text x="2650" y="1130" class="big">&#xA0;&#xA0;1130</text></a>
-	<a xlink:href="CE_1173.svg"><path class="maprange" d="M 2875,1130 l 30,0 l 0,43 l -30,0 z"/><text x="2650" y="1173" class="big">&#xA0;&#xA0;1173</text></a>
-	<a xlink:href="CE_1212.svg"><path class="maprange" d="M 2875,1173 l 30,0 l 0,39 l -30,0 z"/><text x="2650" y="1212" class="big">&#xA0;&#xA0;1212</text></a>
-	<a xlink:href="CE_1230.svg"><path class="maprange" d="M 2875,1212 l 30,0 l 0,18 l -30,0 z"/><text x="2650" y="1230" class="big">&#xA0;&#xA0;1230</text></a-->
-*/
 
 	$message .= <<<eot
 	<path class="options" d="M 2680,1950 l 215,0 l 0,330 l -215,0 z"/>
@@ -186,7 +158,7 @@ foreach ($yeargroup as $year => $val) {
 		}
 	</script>
 eot;
-		$svgtext = fread($fp,  filesize($sourcePath.$filename));
+		$svgtext = fread($fp,  filesize($sourcePath.$filename.'.svg'));
 		fclose($fp);
 		
 		echo 'svgtext length '.strlen($svgtext)."<br/>";
@@ -207,25 +179,50 @@ eot;
 		
 		echo 'updated svgtext length '.strlen($newsvgtext)."<br/>";
 		
-		if (is_writable($targetPath.$filename)) { echo "is writeable<br/>"; }
+		if (is_writable($targetPath.$filename.'.svg')) { echo "is writeable<br/>"; }
 		else { echo "NOT WRITEABLE<br/>";  exit; }
 
-		//chmod($filename,0777);
-		//$fp = fopen($filename, "wb");
+		//chmod($filename.'.svg',0777);
+		//$fp = fopen($filename.'.svg', "wb");
 		//if (!$fp) { $message = 'Could not open file.  Check the spelling of the URI.'; }
 		//$numbytes = fwrite($fp, $newsvgtext);
 		//if (fwrite($fp, $newsvgtext) === FALSE) {
-		//	echo "Cannot write to file ($filename)";
+		//	echo "Cannot write to file ($filename.'.svg')";
 		//	exit;
 		//	}
 
 
-		$numbytes = file_put_contents($targetPath.$filename, $newsvgtext);
-  		echo "Wrote ($numbytes) bytes to file ($targetPath$filename)";
+		$numbytes = file_put_contents($targetPath.$filename.'.svg', $newsvgtext);
+  		echo "Wrote ($numbytes) bytes to file ($targetPath$filename.svg)<br/>";
 
 		//fclose($fp);
         
-       // print ($messagex);
+        
+        
+        //************** CREATE THE HTML FILE *************
+        
+		$htmlfp = fopen('../html_raw/'.$filename.'.html', "r");
+		if (!$htmlfp) { $message = 'Could not open file.  Check the spelling of the URI.'; }
+
+		$htmltext = fread($htmlfp,  filesize('../html_raw/'.$filename.'.html'));
+		fclose($htmlfp);
+	
+		echo 'htmltext length '.strlen($htmltext)."<br/>";
+        
+        // add the SVG text
+		$htmltext = preg_replace('/<svg><\/svg>/',$newsvgtext,$htmltext);
+		$htmltext = preg_replace('/\.\.\/relief_map/','relief_map',$htmltext);
+		echo 'htmltext with base '.strlen($htmltext)."<br/>";
+		
+		$htmltext = preg_replace('/\.svg/','.html',$htmltext);
+		echo 'updated htmltext length '.strlen($htmltext)."<br/>";
+		
+		if (is_writable('../'.$filename.'.html')) { echo "is writeable<br/>"; }
+		else { echo "NOT WRITEABLE<br/>";  exit; }
+
+
+		$numbytes = file_put_contents('../'.$filename.'.html', $htmltext);
+  		echo "Wrote ($numbytes) bytes to file ($filename.html)";
 		}
 	}
 
