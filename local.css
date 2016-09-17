@@ -1,0 +1,54 @@
+body {
+	background-color: white;
+	border: 0;
+	padding: 0;
+	color: #666;
+	margin: 0;
+}
+h2 a { 
+	text-decoration: none;
+	color: #666;
+}
+#description {
+	margin: 3em;
+	font-family: "myriad pro", adobe-clean, 'Helvetica Neue', robotolight, calibri, corbel, "Segoe UI", helvetica, sans-serif;
+	font-size: 16px;
+}
+.era {
+	font-size: 0.5em;
+}
+.date {
+	font-size: 1.4em;
+	margin-right: 1em;
+}
+.sources {
+	font-size: 70%;
+}
+.flex_container {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0;
+}
+.timeline {
+	flex: 1.5;
+	min-width: 12em;
+	margin-right: 3em;
+}
+.mapInfo {
+	flex: 0.5;
+	min-width: 12em;
+}
+.mapInfo section:first-of-type h3 {
+	margin-top: 1em;
+}
+.mapNotes p {
+	font-size: 90%;
+}
+.flex_container p, .flex_container h3 {
+	margin-left: 0;
+	margin-right: 0;
+}
+.mapSources p {
+	font-size: 70%;
+	text-align: start;
+}
