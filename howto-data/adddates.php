@@ -37,13 +37,9 @@ if(isset($_GET['dates']) && $_GET['dates'] != '') {
 		$fp = fopen($sourcePath.$filename.'.svg', "r");
 		if (!$fp) { $message = 'Could not open file.  Check the spelling of the URI.'; }
 	
-		$message = "\n".'<text font-weight="700" font-family="\'Myriad Pro\', Arial, sans-serif" fill="#231f20" font-size="200px" color="black" transform="translate(';
-		if (strlen($filename) == 10) { $message .= '550'; }
-		else { $message .= '550'; }
-		$message .= ' 154)">'.abs($datearray[$i]).'<tspan font-size="72px" x="';
-		if (strlen($filename) == 10) { $message .= '321'; }
-		elseif (strlen($filename) == 9) { $message .= '240'; }
-		else { $message .= '440'; }
+		$message = "\n".'<text font-weight="700" font-family="\'Myriad Pro\', Arial, sans-serif" fill="#231f20" font-size="200px" color="black" text-anchor="end" transform="translate(850 154)">'.abs($datearray[$i]).'<tspan font-size="72px" x="';
+		if ($era == 'BCE') $message .= '150';
+		else $message .= '100';
 		$message .= '" y="0">'.$era.'</tspan></text>';
 		//$message .= '<a xlink:href="../index#'.strtolower($era).abs($datearray[$i]).'">
 		$message .= '<a xlink:href="index#thumbnails"><path fill="#4D4D4F" d="M715.2,242.4l-0.2,61.1c0,5.3,4.3,8.4,12.8,9.5v5l-53.4,0.1v-4.9c4.2,0,7.4-0.8,9.7-2.3
