@@ -52,3 +52,11 @@ h2 a {
 	font-size: 70%;
 	text-align: start;
 }
+.svgLink {
+	text-align: center;
+	font-size: 80%;
+	font-family: 'myriad pro','helvetica neue', helvetica, arial, sans-serif;
+	}
+.svgLink a {
+	text-decoration: none;
+	}

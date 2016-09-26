@@ -18,6 +18,12 @@
 	.st12{font-size:60px;}
 	.st13{font-size:36px;}
 </style>
+ <script type="text/ecmascript">
+<![CDATA[
+// set height proportional to width
+document.getElementById('limit-div').style.height = (window.innerWidth/2905*2313)+'px'
+]]>
+</script>
  
  
  
@@ -3994,9 +4000,9 @@
 <a xlink:href="CE_560.svg"><path class="maprange" d="M 2875,500 l 30,0 l 0,160 l -30,0 z"/><text x="2650" y="660" class="big">&#xA0;&#xA0;560</text></a>
 <a xlink:href="CE_750.svg"><path class="maprange" d="M 2875,660 l 30,0 l 0,190 l -30,0 z"/><text x="2650" y="850" class="big">&#xA0;&#xA0;750</text></a>
 <a xlink:href="CE_944.svg"><path class="maprange" d="M 2875,850 l 30,0 l 0,194 l -30,0 z"/><text x="2650" y="1044" class="big">&#xA0;&#xA0;944</text></a>
-	<path class="options" d="M 2680,1950 l 215,0 l 0,330 l -215,0 z"/>
-	<text transform="translate(2700 2000)" class="selectors" style="fill:#d8d31e;">Options:</text>
-	<text transform="translate(2700 2060)" class="selectors" onclick="
+	<path class="options" d="M 20,1950 l 215,0 l 0,330 l -215,0 z"/>
+	<text transform="translate(40 2000)" class="selectors" style="fill:#d8d31e;">Options:</text>
+	<text transform="translate(40 2060)" class="selectors" onclick="
 	if(document.getElementById('bitmap').style.display!='none'){
 	document.getElementById('bitmap').style.display='none';
 	document.getElementById('coastlines').style.opacity='1';
@@ -4006,14 +4012,14 @@
 	document.getElementById('coastlines').style.opacity='0.3';
 	localStorage.schematic = 'no'; } 
 	">Relief map</text>
-	<text transform="translate(2700 2120)" class="selectors" onclick="
+	<text transform="translate(40 2120)" class="selectors" onclick="
 	var modern_borders = document.getElementById('modern_borders'); 
 	if(modern_borders.style.display=='block'){modern_borders.style.display='none';
 	localStorage.modernBorders = 'no';} 
 	else {modern_borders.style.display='block';
 	localStorage.modernBorders = 'yes';}
 	">Borders</text>
-	<text transform="translate(2700 2180)" class="selectors" onclick="
+	<text transform="translate(40 2180)" class="selectors" onclick="
 	var rivercourses = document.getElementById('rivercourses'); 
 	var rivernames = document.getElementById('rivernames'); 
 	if (rivercourses.style.display=='block'){
@@ -4027,7 +4033,7 @@
 		localStorage.rivers = 'yes';
 		}
 	">Rivers</text>
-	<text transform="translate(2700 2240)" class="selectors" onclick="
+	<text transform="translate(40 2240)" class="selectors" onclick="
 	if(document.getElementById('text').style.display=='none'){
 	document.getElementById('modern_text').style.display='none';
 	document.getElementById('text').style.display='block';

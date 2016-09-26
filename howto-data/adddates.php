@@ -10,9 +10,110 @@ $yeargroup[560] = [400,750];
 $yeargroup[750] = [560,944];
 $yeargroup[944] = [750,0];
 
+$heightSetting = <<<eot
+ <script type="text/ecmascript">
+<![CDATA[
+// set height proportional to width
+document.getElementById('limit-div').style.height = (window.innerWidth/2905*2313)+'px'
+]]>
+</script>
+eot;
+	
+
+$stylingBlock = <<<eot
+<style type="text/css">
+	.big { fill: transparent; font-size: 72px; font-family:'Myriad Pro','Helvetica Neue', Helvetica,Arial,sans-serif; cursor: pointer; }
+	a:hover > .big { fill:#8B5E3C;  }
+	a:hover > .maprange { fill:yellow; }
+	.selectors { cursor:pointer; font-family:'Myriad Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:40px; fill:#ccc; font-weight: normal; }
+	.selectors:hover { fill:#000; border-radius: 10px; }
+	.maprange { fill:#A97C50; stroke:white; }
+	.options { fill:#aa896b; stroke:white; }
+</style> 
+eot;
+
+
+
+$optionMenu = <<<eot
+	<path class="options" d="M 20,1950 l 215,0 l 0,330 l -215,0 z"/>
+	<text transform="translate(40 2000)" class="selectors" style="fill:#d8d31e;">Options:</text>
+	<text transform="translate(40 2060)" class="selectors" onclick="
+	if(document.getElementById('bitmap').style.display!='none'){
+	document.getElementById('bitmap').style.display='none';
+	document.getElementById('coastlines').style.opacity='1';
+	localStorage.schematic = 'yes'; } 
+	else {
+	document.getElementById('bitmap').style.display='block';
+	document.getElementById('coastlines').style.opacity='0.3';
+	localStorage.schematic = 'no'; } 
+	">Relief map</text>
+	<text transform="translate(40 2120)" class="selectors" onclick="
+	var modern_borders = document.getElementById('modern_borders'); 
+	if(modern_borders.style.display=='block'){modern_borders.style.display='none';
+	localStorage.modernBorders = 'no';} 
+	else {modern_borders.style.display='block';
+	localStorage.modernBorders = 'yes';}
+	">Borders</text>
+	<text transform="translate(40 2180)" class="selectors" onclick="
+	var rivercourses = document.getElementById('rivercourses'); 
+	var rivernames = document.getElementById('rivernames'); 
+	if (rivercourses.style.display=='block'){
+		rivercourses.style.display='none';
+		rivernames.style.display='none';
+		localStorage.rivers = 'no';
+		} 
+	else {
+		rivercourses.style.display='block';
+		rivernames.style.display='block';
+		localStorage.rivers = 'yes';
+		}
+	">Rivers</text>
+	<text transform="translate(40 2240)" class="selectors" onclick="
+	if(document.getElementById('text').style.display=='none'){
+	document.getElementById('modern_text').style.display='none';
+	document.getElementById('text').style.display='block';
+	localStorage.modernNames = 'no';} 
+	else {
+	document.getElementById('modern_text').style.display='block';
+	document.getElementById('text').style.display='none';
+	localStorage.modernNames = 'yes';} 
+	if(document.getElementById('cities').style.display=='none'){
+	document.getElementById('modern_cities').style.display='none';
+	document.getElementById('cities').style.display='block';
+	localStorage.modernCities = 'no';} 
+	else {
+	document.getElementById('modern_cities').style.display='block';
+	document.getElementById('cities').style.display='none';
+	localStorage.modernCities = 'yes';} 
+	">Names</text>
+	<script>
+	if (localStorage.schematic == 'yes') { 
+		document.getElementById('bitmap').style.display='none';
+		document.getElementById('coastlines').style.opacity='1';
+		}
+	if (localStorage.modernBorders == 'yes') { 
+		document.getElementById('modern_borders').style.display='block'
+		}
+	if (localStorage.rivers == 'yes') { 
+		document.getElementById('rivercourses').style.display='block'
+		document.getElementById('rivernames').style.display='block'
+		}
+	if (localStorage.modernNames == 'yes') { 
+		document.getElementById('modern_text').style.display='block';
+		document.getElementById('text').style.display='none';
+		document.getElementById('modern_cities').style.display='block';
+		document.getElementById('cities').style.display='none';
+		}
+	</script>
+eot;
+
+
+
+
 $nav = '';
 $filename = '';
 if(isset($_GET['dates']) && $_GET['dates'] != '') {
+	
 	$datelist = $_GET['dates'];
 	
 	$datearray = explode(',',$datelist);
@@ -58,109 +159,29 @@ if(isset($_GET['dates']) && $_GET['dates'] != '') {
 			}
 
 
-$message .= <<<eot
-<style type="text/css">
-	.big { fill: transparent; font-size: 72px; font-family:'Myriad Pro','Helvetica Neue', Helvetica,Arial,sans-serif; cursor: pointer; }
-	a:hover > .big { fill:#8B5E3C;  }
-	a:hover > .maprange { fill:yellow; }
-	.selectors { cursor:pointer; font-family:'Myriad Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:40px; fill:#ccc; font-weight: normal; }
-	.selectors:hover { fill:#000; border-radius: 10px; }
-	.maprange { fill:#A97C50; stroke:white; }
-	.options { fill:#aa896b; stroke:white; }
-</style> 
-eot;
-
-// do timeline
-// starts at 100BCE, so add 100 to each figure
-$message .= "\n";
-foreach ($yeargroup as $year => $val) {
-	$message .= '<a xlink:href="';
-	if ($year < 0) $message .= 'BCE_';
-	else $message .= 'CE_';
-	if ($val[0] == 0) $message .= abs($year).'.svg"><path class="maprange" d="M 2875,0 l 30,0 l 0,'.(($year-$val[0])+100).' l -30,0 z"/><text x="2650" y="100" class="big">&#xA0;&#xA0;'.$year.'</text></a>'."\n";
-	else $message .= abs($year).'.svg"><path class="maprange" d="M 2875,'.($val[0]+100).' l 30,0 l 0,'.($year-$val[0]).' l -30,0 z"/><text x="2650" y="'.($year+100).'" class="big">&#xA0;&#xA0;'.$year.'</text></a>'."\n";
-	}
-
-
-	$message .= <<<eot
-	<path class="options" d="M 2680,1950 l 215,0 l 0,330 l -215,0 z"/>
-	<text transform="translate(2700 2000)" class="selectors" style="fill:#d8d31e;">Options:</text>
-	<text transform="translate(2700 2060)" class="selectors" onclick="
-	if(document.getElementById('bitmap').style.display!='none'){
-	document.getElementById('bitmap').style.display='none';
-	document.getElementById('coastlines').style.opacity='1';
-	localStorage.schematic = 'yes'; } 
-	else {
-	document.getElementById('bitmap').style.display='block';
-	document.getElementById('coastlines').style.opacity='0.3';
-	localStorage.schematic = 'no'; } 
-	">Relief map</text>
-	<text transform="translate(2700 2120)" class="selectors" onclick="
-	var modern_borders = document.getElementById('modern_borders'); 
-	if(modern_borders.style.display=='block'){modern_borders.style.display='none';
-	localStorage.modernBorders = 'no';} 
-	else {modern_borders.style.display='block';
-	localStorage.modernBorders = 'yes';}
-	">Borders</text>
-	<text transform="translate(2700 2180)" class="selectors" onclick="
-	var rivercourses = document.getElementById('rivercourses'); 
-	var rivernames = document.getElementById('rivernames'); 
-	if (rivercourses.style.display=='block'){
-		rivercourses.style.display='none';
-		rivernames.style.display='none';
-		localStorage.rivers = 'no';
-		} 
-	else {
-		rivercourses.style.display='block';
-		rivernames.style.display='block';
-		localStorage.rivers = 'yes';
-		}
-	">Rivers</text>
-	<text transform="translate(2700 2240)" class="selectors" onclick="
-	if(document.getElementById('text').style.display=='none'){
-	document.getElementById('modern_text').style.display='none';
-	document.getElementById('text').style.display='block';
-	localStorage.modernNames = 'no';} 
-	else {
-	document.getElementById('modern_text').style.display='block';
-	document.getElementById('text').style.display='none';
-	localStorage.modernNames = 'yes';} 
-	if(document.getElementById('cities').style.display=='none'){
-	document.getElementById('modern_cities').style.display='none';
-	document.getElementById('cities').style.display='block';
-	localStorage.modernCities = 'no';} 
-	else {
-	document.getElementById('modern_cities').style.display='block';
-	document.getElementById('cities').style.display='none';
-	localStorage.modernCities = 'yes';} 
-	">Names</text>
-	<script>
-	if (localStorage.schematic == 'yes') { 
-		document.getElementById('bitmap').style.display='none';
-		document.getElementById('coastlines').style.opacity='1';
-		}
-	if (localStorage.modernBorders == 'yes') { 
-		document.getElementById('modern_borders').style.display='block'
-		}
-	if (localStorage.rivers == 'yes') { 
-		document.getElementById('rivercourses').style.display='block'
-		document.getElementById('rivernames').style.display='block'
-		}
-	if (localStorage.modernNames == 'yes') { 
-		document.getElementById('modern_text').style.display='block';
-		document.getElementById('text').style.display='none';
-		document.getElementById('modern_cities').style.display='block';
-		document.getElementById('cities').style.display='none';
-		}
-	</script>
-eot;
+    $message .= $stylingBlock;
+    
+    // do timeline
+    // starts at 100BCE, so add 100 to each figure
+    $message .= "\n";
+    foreach ($yeargroup as $year => $val) {
+        $message .= '<a xlink:href="';
+        if ($year < 0) $message .= 'BCE_';
+        else $message .= 'CE_';
+        if ($val[0] == 0) $message .= abs($year).'.svg"><path class="maprange" d="M 2875,0 l 30,0 l 0,'.(($year-$val[0])+100).' l -30,0 z"/><text x="2650" y="100" class="big">&#xA0;&#xA0;'.$year.'</text></a>'."\n";
+        else $message .= abs($year).'.svg"><path class="maprange" d="M 2875,'.($val[0]+100).' l 30,0 l 0,'.($year-$val[0]).' l -30,0 z"/><text x="2650" y="'.($year+100).'" class="big">&#xA0;&#xA0;'.$year.'</text></a>'."\n";
+        }
+    
+    
+        $message .= $optionMenu;
+    
 		$svgtext = fread($fp,  filesize($sourcePath.$filename.'.svg'));
 		fclose($fp);
 		
 		echo 'svgtext length '.strlen($svgtext)."<br/>";
         
         // add the base text
-		$svgtext = preg_replace('/\<g id="bitmap"\>[\s]+\<image style="overflow:visible;" width="1968" height="1567" xlink\:href="\.\.\/relief_map\.jpg"[\s]+transform="matrix\(1\.4757 0 0 1\.4757 1\.8006 0\)">[\s]+\<\/image\>[\s]+\<\/g\>/',$basetext,$svgtext);
+		$svgtext = preg_replace('/\<g id="bitmap"\>[\s]+\<image style="overflow:visible;" width="1968" height="1567" xlink\:href="\.\.\/relief_map\.jpg"[\s]+transform="matrix\(1\.4757 0 0 1\.4757 1\.8006 0\)">[\s]+\<\/image\>[\s]+\<\/g\>/',$heightSetting."\n".$basetext,$svgtext);
 		echo 'svgtext with base '.strlen($svgtext)."<br/>";
 		
 		$svgtext = preg_replace('/<text font-weight="700" font-family="\'Myriad Pro\', Arial,(.|\n)+<\/svg>/','</svg>',$svgtext);
@@ -206,11 +227,16 @@ eot;
 		echo 'htmltext length '.strlen($htmltext)."<br/>";
         
         // add the SVG text
-		$htmltext = preg_replace('/<svg><\/svg>/',$newsvgtext,$htmltext);
+        $enclosingDiv = '<div id="limit-div" style="width: 100%; height: 1000px;">'."\n";
+		$htmltext = preg_replace('/<svg><\/svg>/',$enclosingDiv.$newsvgtext.'</div>',$htmltext);
+		$htmltext = preg_replace('/<\?xml version="1\.0" encoding="utf-8"\?>/','',$htmltext);
+		$htmltext = preg_replace('/<svg /','<svg id="limit-svg"  ',$htmltext);
+		$htmltext = preg_replace('/style="enable-background:/','style="enable-background:new 0 0 2905.1 2313; display: inline; width: inherit; min-width: inherit; max-width: inherit; height: inherit; min-height: inherit; max-height: inherit; enable-background:',$htmltext);
 		$htmltext = preg_replace('/\.\.\/relief_map/','relief_map',$htmltext);
 		echo 'htmltext with base '.strlen($htmltext)."<br/>";
 		
 		$htmltext = preg_replace('/\.svg/','.html',$htmltext);
+		$htmltext = preg_replace('/<\/body>/','<p class="svgLink"><a href="svg/'.$filename.'.svg">View the SVG only</a></p></body>',$htmltext);
 		echo 'updated htmltext length '.strlen($htmltext)."<br/>";
 		
 		if (is_writable('../'.$filename.'.html')) { echo "is writeable<br/>"; }
