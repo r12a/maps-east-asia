@@ -108,7 +108,66 @@ $optionMenu = <<<eot
 eot;
 
 
-
+$htmlOptions = <<<eot
+<div id="options">
+<p>Options: &nbsp; <span class="option" onclick="
+	if(document.getElementById('bitmap').style.display!='none'){
+	document.getElementById('bitmap').style.display='none';
+	document.getElementById('coastlines').style.opacity='1';
+	localStorage.schematic = 'yes'; } 
+	else {
+	document.getElementById('bitmap').style.display='block';
+	document.getElementById('coastlines').style.opacity='0.3';
+	localStorage.schematic = 'no'; } 
+	">Relief</span> &bull;
+	<span class="option" onclick="
+	var modern_borders = document.getElementById('modern_borders'); 
+	if(modern_borders.style.display=='block'){modern_borders.style.display='none';
+	localStorage.modernBorders = 'no';} 
+	else {modern_borders.style.display='block';
+	localStorage.modernBorders = 'yes';}
+	">Borders</span> &bull;
+	<span class="option" onclick="
+	var rivercourses = document.getElementById('rivercourses'); 
+	var rivernames = document.getElementById('rivernames'); 
+	if (rivercourses.style.display=='block'){
+		rivercourses.style.display='none';
+		rivernames.style.display='none';
+		localStorage.rivers = 'no';
+		} 
+	else {
+		rivercourses.style.display='block';
+		rivernames.style.display='block';
+		localStorage.rivers = 'yes';
+		}
+	">Rivers</span> &bull;
+	<span class="option" onclick="
+	if(document.getElementById('text').style.display=='none'){
+	document.getElementById('modern_text').style.display='none';
+	document.getElementById('text').style.display='block';
+	localStorage.modernNames = 'no';} 
+	else {
+	document.getElementById('modern_text').style.display='block';
+	document.getElementById('text').style.display='none';
+	localStorage.modernNames = 'yes';} 
+	if(document.getElementById('cities').style.display=='none'){
+	document.getElementById('modern_cities').style.display='none';
+	document.getElementById('cities').style.display='block';
+	localStorage.modernCities = 'no';} 
+	else {
+	document.getElementById('modern_cities').style.display='block';
+	document.getElementById('cities').style.display='none';
+	localStorage.modernCities = 'yes';} 
+	">Names</span> &bull;
+	<span class="option" onclick=" 
+	var shading = document.getElementById('borders')
+	if(shading.style.display == 'none') shading.style.display='block'
+    else if (shading.style.display == 'block') shading.style.display='none'
+	else shading.style.display='none'
+	">Shading</span>
+    </p>
+</div>
+eot;
 
 $nav = '';
 $filename = '';
@@ -117,6 +176,12 @@ if(isset($_GET['dates']) && $_GET['dates'] != '') {
 	$datelist = $_GET['dates'];
 	
 	$datearray = explode(',',$datelist);
+    if ($datearray[0] == 'all') {
+    	$ptr = 0;
+    	foreach ($yeargroup as $year => $val) {
+        	$datearray[$ptr++] = $year;
+        	}
+    	}
 	$sourcePath = '../svg_raw/';
 	$targetPath = '../svg/';
 	
@@ -181,7 +246,8 @@ if(isset($_GET['dates']) && $_GET['dates'] != '') {
 		echo 'svgtext length '.strlen($svgtext)."<br/>";
         
         // add the base text
-		$svgtext = preg_replace('/\<g id="bitmap"\>[\s]+\<image style="overflow:visible;" width="1968" height="1567" xlink\:href="\.\.\/relief_map\.jpg"[\s]+transform="matrix\(1\.4757 0 0 1\.4757 1\.8006 0\)">[\s]+\<\/image\>[\s]+\<\/g\>/',$heightSetting."\n".$basetext,$svgtext);
+		//$svgtext = preg_replace('/\<g id="bitmap"\>[\s]+\<image style="overflow:visible;" width="1968" height="1567" xlink\:href="\.\.\/relief_map\.jpg"[\s]+transform="matrix\(1\.4757 0 0 1\.4757 1\.8006 0\)">[\s]+\<\/image\>[\s]+\<\/g\>/',$heightSetting."\n".$basetext,$svgtext);
+		$svgtext = preg_replace('/\<g id="bitmap"\>[\s]+\<image [^<]+\<\/image\>[\s]+\<\/g\>/',$heightSetting."\n".$basetext,$svgtext);
 		echo 'svgtext with base '.strlen($svgtext)."<br/>";
 		
 		$svgtext = preg_replace('/<text font-weight="700" font-family="\'Myriad Pro\', Arial,(.|\n)+<\/svg>/','</svg>',$svgtext);
@@ -228,7 +294,7 @@ if(isset($_GET['dates']) && $_GET['dates'] != '') {
         
         // add the SVG text
         $enclosingDiv = '<div id="limit-div" style="width: 100%; height: 1000px;">'."\n";
-		$htmltext = preg_replace('/<svg><\/svg>/',$enclosingDiv.$newsvgtext.'</div>',$htmltext);
+		$htmltext = preg_replace('/<svg><\/svg>/',$enclosingDiv.$newsvgtext.'</div>'.$htmlOptions,$htmltext);
 		$htmltext = preg_replace('/<\?xml version="1\.0" encoding="utf-8"\?>/','',$htmltext);
 		$htmltext = preg_replace('/<svg /','<svg id="limit-svg"  ',$htmltext);
 		$htmltext = preg_replace('/style="enable-background:/','style="enable-background:new 0 0 2905.1 2313; display: inline; width: inherit; min-width: inherit; max-width: inherit; height: inherit; min-height: inherit; max-height: inherit; enable-background:',$htmltext);
