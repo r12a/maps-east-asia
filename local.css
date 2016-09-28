@@ -60,3 +60,12 @@ h2 a {
 .svgLink a {
 	text-decoration: none;
 	}
+#options p {
+	text-align: right; font-size: 90%; margin: 0 1em 0 0; font-family: 'myriad pro', adobe-clean, 'Helvetica Neue', robotolight, calibri, corbel, 'Segoe UI', helvetica, sans-serif; 
+	}
+#options span {
+	color: #aa896b; cursor:pointer;
+	}
+svg {
+	cursor: move;
+	}
