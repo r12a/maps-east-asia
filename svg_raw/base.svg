@@ -46,7 +46,7 @@
 </style>
 <g id="bitmap">
 	
-		<image style="overflow:visible;" width="1968" height="1567" xlink:href="../relief_map.jpg"  transform="matrix(1.4757 0 0 1.4757 1.8006 0)">
+		<image style="overflow:visible;" width="1968" height="1567" xlink:href="../../r12a.github.io/maps/eastasia/relief_map.jpg"  transform="matrix(1.4757 0 0 1.4757 1.8006 0)">
 	</image>
 </g>
 <g id="coastlines" class="st0">
@@ -3506,7 +3506,7 @@
 	<text transform="matrix(1 0 0 1 2753.6543 1252.48)" class="st4 st6 st29">Japan</text>
 	<text transform="matrix(1 0 0 1 197.6544 370.48)" class="st4 st6 st29">Kazakhstan</text>
 	<text transform="matrix(1 0 0 1 2352.6533 1919.3519)" class="st4 st6 st30">Taiwan</text>
-	<text transform="matrix(1 0 0 1 2420.6543 897.1098)" class="st4"><tspan x="0" y="0" class="st6 st30">North</tspan><tspan x="0" y="43.2" class="st6 st30">Korea</tspan></text>
+	<text transform="matrix(1 0 0 1 2420.6543 881.1098)" class="st4"><tspan x="0" y="0" class="st6 st30">North</tspan><tspan x="0" y="43.2" class="st6 st30">Korea</tspan></text>
 	<text transform="matrix(1 0 0 1 923.6543 2066.48)" class="st4 st6 st29">Myanmar</text>
 	<text transform="matrix(1 0 0 1 1396.6979 1335.5095)" class="st4 st6 st31">China</text>
 	<text transform="matrix(1 0 0 1 1311.6544 590.48)" class="st4 st6 st29">Mongolia</text>
@@ -3573,13 +3573,13 @@
 	<circle class="st39" cx="1967.3" cy="1546.2" r="6.1"/>
 	<text transform="matrix(1 0 0 1 1948.181 1567.3785)" class="st4 st8 st37">Wuhan</text>
 	<circle class="st39" cx="296.2" cy="654.1" r="6.1"/>
-	<text transform="matrix(1 0 0 1 253.9378 645.8237)" class="st4 st8 st37">Almaty</text>
+	<text transform="matrix(1 0 0 1 260.0492 645.8237)" class="st4 st8 st7">Almaty</text>
 	<circle class="st39" cx="487.9" cy="663.4" r="6.1"/>
-	<text transform="matrix(1 0 0 1 491.6806 658.8522)" class="st4 st8 st37">Yining</text>
+	<text transform="matrix(1 0 0 1 497.2412 658.8522)" class="st4 st8 st7">Yining</text>
 	<circle class="st39" cx="279.1" cy="427" r="6.1"/>
 	<text transform="matrix(1 0 0 1 286.6837 426.7165)" class="st4 st8 st37">Balqash</text>
 	<circle class="st39" cx="753.1" cy="722.8" r="5.2"/>
-	<text transform="matrix(1 0 0 1 747.2056 713.5201)" class="st4 st8 st37">Ürümqi</text>
+	<text transform="matrix(1 0 0 1 753.6509 713.5201)" class="st4 st8 st7">Ürümqi</text>
 	<text transform="matrix(1 0 0 1 1552.8994 2121.8984)" class="st4 st8 st37">Hanoi</text>
 	<circle class="st39" cx="1812.4" cy="2184.7" r="6.1"/>
 	<circle class="st39" cx="1386.6" cy="1895.9" r="6.1"/>
@@ -3608,16 +3608,16 @@
 	<text transform="matrix(1 0 0 1 1574.575 1358.0312)" class="st4 st8 st37">Baoji</text>
 	<text transform="matrix(1 0 0 1 1489.8374 1358.0315)" class="st4 st8 st37">Tianshui</text>
 	<text transform="matrix(1 0 0 1 1727.6472 1337.9187)" class="st4 st8 st37">Weinan</text>
-	<text transform="matrix(1 0 0 1 1437.0167 1260.7644)" class="st4 st8 st37">Lanzhou</text>
+	<text transform="matrix(1 0 0 1 1444.6906 1260.7644)" class="st4 st8 st7">Lanzhou</text>
 	<circle class="st39" cx="1032.7" cy="977" r="5.2"/>
-	<text transform="matrix(1 0 0 1 1017.3185 966.4717)" class="st4 st8 st37">Dunhuang</text>
+	<text transform="matrix(1 0 0 1 1026.5491 966.4717)" class="st4 st8 st7">Dunhuang</text>
 	<text transform="matrix(1 0 0 1 1830.7704 1322.6991)" class="st4 st8 st37">Luoyang</text>
 	<circle class="st39" cx="812" cy="785.8" r="5.2"/>
-	<text transform="matrix(1 0 0 1 792.8654 801.1868)" class="st4 st8 st37">Turfan</text>
+	<text transform="matrix(1 0 0 1 798.6447 801.1868)" class="st4 st8 st7">Turfan</text>
 	<circle class="st39" cx="337.1" cy="1042.6" r="5.2"/>
-	<text transform="matrix(1 0 0 1 346.193 1037.4124)" class="st4 st8 st37">Hotan</text>
+	<text transform="matrix(1 0 0 1 344.5309 1039.4124)" class="st4 st8 st7">Hotan</text>
 	<circle class="st39" cx="194.9" cy="855.2" r="5.2"/>
-	<text transform="matrix(1 0 0 1 176.0045 876.079)" class="st4 st8 st37">Kashgar</text>
+	<text transform="matrix(1 0 0 1 183.4537 876.079)" class="st4 st8 st7">Kashgar</text>
 	<circle class="st39" cx="1794" cy="945.8" r="5.2"/>
 	<text transform="matrix(1 0 0 1 1764.9535 966.4718)" class="st4 st8 st37">Hohhot</text>
 	<circle class="st39" cx="790.1" cy="1575" r="5.2"/>
@@ -3625,7 +3625,7 @@
 	<circle class="st39" cx="1948.9" cy="1290.8" r="5.2"/>
 	<text transform="matrix(1 0 0 1 1918.4229 1309.9779)" class="st4 st8 st37">Kaifeng</text>
 	<circle class="st39" cx="994.9" cy="815.2" r="5.2"/>
-	<text transform="matrix(1 0 0 1 979.0817 839.4717)" class="st4 st8 st37">Hami</text>
+	<text transform="matrix(1 0 0 1 983.7477 834.4717)" class="st4 st8 st7">Hami</text>
 	<circle class="st39" cx="1681.1" cy="1337.9" r="5.2"/>
 	<circle class="st39" cx="2094.4" cy="1305.8" r="5.2"/>
 	<text transform="matrix(1 0 0 1 2063.9097 1327.4779)" class="st4 st8 st37">Xuzhou</text>
@@ -3637,31 +3637,31 @@
 	<text transform="matrix(1 0 0 1 1880.4236 1675.7129)" class="st4 st8 st37">Changsha</text>
 	<text transform="matrix(1 0 0 1 843.8371 949.2217)" class="st4 st8 st37">Lop Nur</text>
 	<circle class="st39" cx="404.2" cy="811.1" r="6.1"/>
-	<text transform="matrix(1 0 0 1 383.6904 801.8522)" class="st4 st8 st37">Aksu</text>
+	<text transform="matrix(1 0 0 1 388.1377 801.8522)" class="st4 st8 st7">Aksu</text>
 	<circle class="st39" cx="528.5" cy="805.9" r="5.2"/>
-	<text transform="matrix(1 0 0 1 508.9306 797.6022)" class="st4 st8 st37">Kuqa</text>
+	<text transform="matrix(1 0 0 1 513.6005 797.6022)" class="st4 st8 st7">Kuqa</text>
 	<circle class="st39" cx="1869.5" cy="983.7" r="5.2"/>
 	<text transform="matrix(1 0 0 1 1841.9535 1003.8052)" class="st4 st8 st37">Datong</text>
 	<circle class="st39" cx="2176.7" cy="854.5" r="6.1"/>
 	<text transform="matrix(1 0 0 1 2148.7578 846.8434)" class="st4 st8 st37">Chaoyang</text>
 	<circle class="st39" cx="1386.3" cy="1129.2" r="5.2"/>
-	<text transform="matrix(1 0 0 1 1359.3376 1121.1495)" class="st4 st8 st37">Wuwei</text>
+	<text transform="matrix(1 0 0 1 1365.3396 1121.1495)" class="st4 st8 st7">Wuwei</text>
 	<circle class="st39" cx="1289.6" cy="1068.4" r="5.2"/>
-	<text transform="matrix(1 0 0 1 1266.6176 1060.6952)" class="st4 st8 st37">Zhangye</text>
+	<text transform="matrix(1 0 0 1 1274.4008 1060.6952)" class="st4 st8 st7">Zhangye</text>
 	<circle class="st39" cx="1944.7" cy="1185.3" r="5.2"/>
 	<text transform="matrix(1 0 0 1 1909.7365 1178.2798)" class="st4 st8 st37">Handan</text>
 	<circle class="st39" cx="229.5" cy="932.7" r="5.2"/>
-	<text transform="matrix(1 0 0 1 208.8597 951.4124)" class="st4 st8 st37">Yarkant</text>
+	<text transform="matrix(1 0 0 1 215.7523 951.4124)" class="st4 st8 st7">Yarkant</text>
 	<circle class="st39" cx="2011" cy="978.5" r="5.2"/>
 	<text transform="matrix(1 0 0 1 1959.5309 998.0884)" class="st4 st8 st33">Beijing</text>
 	<circle class="st39" cx="2217.8" cy="1400" r="5.2"/>
 	<text transform="matrix(1 0 0 1 2196.4995 1421.213)" class="st4 st8 st37">Yanzhou</text>
 	<circle class="st39" cx="2440.9" cy="956.4" r="6.1"/>
-	<text transform="matrix(1 0 0 1 2405.249 946.1768)" class="st4 st8 st38">Pyongyang</text>
+	<text transform="matrix(1 0 0 1 2412.7549 946.1768)" class="st4 st8 st37">Pyongyang</text>
 	<circle class="st39" cx="193.2" cy="649.1" r="6.1"/>
-	<text transform="matrix(1 0 0 1 163.6771 675.8237)" class="st4 st8 st38">Bishkek</text>
+	<text transform="matrix(1 0 0 1 175.932 675.8237)" class="st4 st8 st7">Bishkek</text>
 	<circle class="st39" cx="66.1" cy="605.6" r="6.1"/>
-	<text transform="matrix(1 0 0 1 71.7711 611.7137)" class="st4 st8 st37">Taraz</text>
+	<text transform="matrix(1 0 0 1 76.8824 611.7137)" class="st4 st8 st7">Taraz</text>
 	<circle class="st39" cx="2274.2" cy="1516.5" r="5.2"/>
 	<text transform="matrix(1 0 0 1 2243.8682 1506.1403)" class="st4 st8 st37">Hangzhou</text>
 	<text transform="matrix(1 0 0 1 2037.4023 1011.9735)" class="st4 st8 st37">Tianjin</text>
@@ -3673,5 +3673,13 @@
 	<text transform="matrix(1 0 0 1 1838.9564 1109.7356)" class="st4 st8 st37">Taiyuan</text>
 	<circle class="st39" cx="1249.3" cy="1858" r="6.1"/>
 	<text transform="matrix(1 0 0 1 1239.9579 1848.6396)" class="st4 st8 st37">Dali</text>
+	<circle class="st39" cx="1205.3" cy="1016.1" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1191.1215 1034.0284)" class="st4 st8 st7">Jiuquan</text>
+	<circle class="st39" cx="818.2" cy="931.7" r="5.2"/>
+	<text transform="matrix(1 0 0 1 776.7288 921.3606)" class="st4 st8 st7">Loulan</text>
+	<circle class="st39" cx="29.6" cy="746.3" r="6.1"/>
+	<text transform="matrix(1 0 0 1 13.5594 739.2137)" class="st4 st8 st7">Fergana</text>
+	<circle class="st39" cx="687.7" cy="828.2" r="5.2"/>
+	<text transform="matrix(1 0 0 1 647.1794 820.3999)" class="st4 st8 st7">Yanqi</text>
 </g>
 </svg>
