@@ -16,21 +16,29 @@ h2 { margin-top: 3em; }
 <p>Temporarily delete any dated or temporary stuff. Set all layers to non-visible, except for <code class="kw" translate="no">coastlines</code> and <code class="kw" translate="no">bitmap</code>. You should see this:</p>
 <p><img src="howto-data/baseexport.png" alt=""/></p>
 <p><code class="kw" translate="no">File &gt; Save a Copy</code></p>
-<p>Select <code class="kw" translate="no">SVG</code> and set name to <code class="kw" translate="no">svg/base.svg</code></p>
+<p>Select <code class="kw" translate="no">SVG</code> and set name to <code class="kw" translate="no">svg_raw/base.svg</code></p>
 <p>Settings:</p>
 <p><img src="howto-data/savecopy.png" alt=""/></p>
 <p>Set the permissions to writeable.</p>
 <p>Run <a href="http://localhost/maps-east-asia/howto-data/preparebase.php" target="_blank">howto-data/preparebase.php</a>. This removes the top and end of the file, and the bitmap, and changes all .st... style names to .bt... style names.</p>
-<p>It creates the file howto-data/newbase.php, which is later included into dated files.</p>
+<p>It creates the file <code class="kw" translate="no">svg/base.svg</code>, which is later included into dated files.</p>
+
+
 <h2>Saving a dated SVG file</h2>
 <p>Make a backup, then temporarily delete all base information. Set all layers to visible. You should see this:</p>
 <p><img src="howto-data/datedexport.png" alt=""/></p>
 <p><code class="kw" translate="no">File &gt; Save a Copy</code></p>
 <p>Select <code class="kw" translate="no">SVG</code> and set name to <code class="kw" translate="no">svg_raw/&lt;era&gt;_&lt;date&gt;.svg</code></p>
 <p>Settings as for base version.</p>
-<p>Set the permissions to writeable.</p>
-<p>Run <a href="http://localhost/maps-east-asia/howto-data/adddates.php?dates=" target="_blank">howto-data/adddates.php</a> with parameter ?dates=XX where XX is the year of the map. (For BC use -XX. Multiple, comma-separated dates are allowed.) This adds the navigation, cleans up some styling (esp. fonts), includes the latest base data, etc.</p>
-<p>&nbsp;</p>
+
+
+<h2>Create an HTML file</h2>
+<p>Create or update a file at <code class="kw" translate="no">html_raw/&lt;era&gt;_&lt;date&gt;.html</code>. It should include timeline and source information, and maybe notes.</p>
+
+
+<h2>Generate the final files</h2>
+<p>Run <a href="http://localhost/maps-east-asia/howto-data/adddates.php?dates=" target="_blank">howto-data/adddates.php</a> with parameter ?dates=XX where XX is the year of the map. (For BC use -XX. Multiple, comma-separated dates are allowed.) </p>
+<p>This adds the navigation, cleans up some styling (esp. fonts), includes the latest base data, etc. and creates the new files <code class="kw" translate="no">svg/&lt;era&gt;_&lt;date&gt;.svg</code> AND <code class="kw" translate="no">&lt;era&gt;_&lt;date&gt;.html</code>.</p>
 <h2> Locating a spot for a city
 </h2>
 <p>Open <a href="howto-data/longlat.html" target="_blank">howto-data/longlat.html</a> and follow the instructions.</p>
