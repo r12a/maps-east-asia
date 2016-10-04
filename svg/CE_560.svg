@@ -15,8 +15,9 @@
 	.st9{font-size:24px;}
 	.st10{font-size:21px;}
 	.st11{font-family:'Myriad Pro',Helvetica,Arial,sans-serif;}
-	.st12{font-size:48px;}
-	.st13{font-size:72px;}
+	.st12{font-size:104px;}
+	.st13{font-size:48px;}
+	.st14{font-size:36px;}
 </style>
  <script type="text/ecmascript">
 <![CDATA[
@@ -4218,11 +4219,13 @@ document.getElementById('limit-div').style.height = (window.innerWidth/2905*2313
 	<text transform="matrix(1 0 0 1 1929.2822 1178.3872)" class="st8 st10">Ye</text>
 </g>
 <g id="text">
-	<text transform="matrix(1 0 0 1 1888.8842 1264.535)"><tspan x="0" y="0" class="st11 st12">(Northern)</tspan><tspan x="71.7" y="86.4" class="st11 st13">Qi</tspan></text>
-	<text transform="matrix(1 0 0 1 1902.491 1831.6027)" class="st11 st13">Chen</text>
-	<text transform="matrix(1 0 0 1 1489.5068 1452.8521)"><tspan x="0" y="0" class="st11 st12">(Northern)</tspan><tspan x="25.4" y="86.4" class="st11 st13">Zhou</tspan></text>
-	<text transform="matrix(1 0 0 1 938.278 1133.3717)"><tspan x="0" y="0" class="st11 st12">Western</tspan><tspan x="29.2" y="57.6" class="st11 st12">Turks</tspan></text>
-	<text transform="matrix(1 0 0 1 1879.936 849.9845)"><tspan x="0" y="0" class="st11 st12">Eastern</tspan><tspan x="20.3" y="57.6" class="st11 st12">Turks</tspan></text>
+	<text transform="matrix(1 0 0 1 1941.7909 1333.535)" class="st11 st12">Qi</text>
+	<text transform="matrix(1 0 0 1 1867.4353 1831.6027)" class="st11 st12">Chen</text>
+	<text transform="matrix(1 0 0 1 1479.5942 1527.8521)" class="st11 st12">Zhou</text>
+	<text transform="matrix(1 0 0 1 938.278 1133.3717)"><tspan x="0" y="0" class="st11 st13">Western</tspan><tspan x="29.2" y="57.6" class="st11 st13">Turks</tspan></text>
+	<text transform="matrix(1 0 0 1 1879.936 849.9845)"><tspan x="0" y="0" class="st11 st13">Eastern</tspan><tspan x="20.3" y="57.6" class="st11 st13">Turks</tspan></text>
+	<text transform="matrix(1 0 0 1 1529.5377 1446.7128)" class="st11 st14">Northern</text>
+	<text transform="matrix(1 0 0 1 1925.3336 1251.2617)" class="st11 st14">Northern</text>
 </g>
 
 <text font-weight="700" font-family="'Myriad Pro', Arial, sans-serif" fill="#231f20" font-size="200px" color="black" text-anchor="end" transform="translate(850 154)">560<tspan font-size="72px" x="100" y="0">CE</tspan></text><a xlink:href="index#thumbnails"><path fill="#4D4D4F" d="M715.2,242.4l-0.2,61.1c0,5.3,4.3,8.4,12.8,9.5v5l-53.4,0.1v-4.9c4.2,0,7.4-0.8,9.7-2.3
