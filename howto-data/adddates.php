@@ -4,9 +4,14 @@
 
 $yeargroup = [];
 $yeargroup[-90] = [0,260];
-$yeargroup[260] = [-90,400];
-$yeargroup[400] = [260,560];
-$yeargroup[560] = [400,750];
+$yeargroup[260] = [-90,280];
+$yeargroup[280] = [260,360];
+$yeargroup[360] = [280,383];
+$yeargroup[383] = [360,400];
+$yeargroup[400] = [383,440];
+$yeargroup[440] = [400,500];
+$yeargroup[500] = [440,560];
+$yeargroup[560] = [500,750];
 $yeargroup[750] = [560,944];
 $yeargroup[944] = [750,0];
 

@@ -69,9 +69,8 @@ document.getElementById('limit-div').style.height = (window.innerWidth/2905*2313
 	.bt34{font-family:'Myriad Pro',Helvetica,Arial,sans-serif; font-style: italic;}
 	.bt35{font-family:'Arial-ItalicMT';}
 	.bt36{font-size:28px;}
-	.bt37{font-size:18px;}
-	.bt38{font-size:21px;}
-	.bt39{display:inline;fill:#ED1C24;stroke:#1C75BC;stroke-linecap:round;stroke-miterlimit:10;}
+	.bt37{display:inline;fill:#ED1C24;stroke:#1C75BC;stroke-linecap:round;stroke-miterlimit:10;}
+	.bt38{font-size:18px;}
 </style>
 <g id="bitmap">
 	
@@ -561,7 +560,7 @@ document.getElementById('limit-div').style.height = (window.innerWidth/2905*2313
 		c-38.7,0-77.5,0-116.2,0c-32.9,0-65.8,0-98.7,0c-24.2,0-48.5,0-72.7,0C1116.6,0,1102.6,0,1088.7,0z"/>
 </g>
 <g id="rivernames" class="bt3">
-	<text transform="matrix(0.8117 0.584 -0.584 0.8117 2229.9934 1390.239)" class="bt4"><tspan x="0" y="0" class="bt5 bt6 bt7">Yángz</tspan><tspan x="35.9" y="0" class="bt5 bt8 bt7">ǐ</tspan></text>
+	<text transform="matrix(0.683 -0.7304 0.7304 0.683 2160.7285 1500.4875)" class="bt4"><tspan x="0" y="0" class="bt5 bt6 bt7">Yángz</tspan><tspan x="35.9" y="0" class="bt5 bt8 bt7">ǐ</tspan></text>
 	<text transform="matrix(0.8129 -0.5824 0.5824 0.8129 2080.175 1122.9996)" class="bt9 bt6 bt7">Huáng Hé</text>
 	<text transform="matrix(0.6343 -0.7731 0.7731 0.6343 2738.1023 121.8722)" class="bt9 bt6 bt7">Аму́р</text>
 	<text transform="matrix(0.6343 -0.7731 0.7731 0.6343 2760.1023 138.8721)" class="bt9 bt6 bt7">Hēilóng</text>
@@ -640,6 +639,7 @@ document.getElementById('limit-div').style.height = (window.innerWidth/2905*2313
 	<text transform="matrix(0.866 0.5 -0.5 0.866 140.3365 541.8958)" class="bt9 bt6 bt7">Chu</text>
 	<text transform="matrix(0.1986 0.9801 -0.9801 0.1986 75.8742 560.9594)" class="bt9 bt6 bt7">Talas</text>
 	<text transform="matrix(0.3857 -0.9226 0.9226 0.3857 41.4266 580.3611)" class="bt9 bt6 bt7">Assa</text>
+	<text transform="matrix(0.8179 0.5754 -0.5754 0.8179 1257.7452 1181.7606)" class="bt9 bt6 bt10">Kokonor</text>
 </g>
 <g id="rivercourses" class="bt3">
 	<path class="bt12" d="M2662.9,497.2c1,1,2.1,2.6,2.4,4c0.3,1.5-0.4,2.5,1.1,3.6c1.2,0.9,1.2,2.7,1.9,4c0.8,1.6,2.4,2.5,3.8,3.5
@@ -3537,7 +3537,7 @@ document.getElementById('limit-div').style.height = (window.innerWidth/2905*2313
 	<text transform="matrix(1 0 0 1 2352.6533 1919.3519)" class="bt4 bt6 bt30">Taiwan</text>
 	<text transform="matrix(1 0 0 1 2420.6543 881.1098)" class="bt4"><tspan x="0" y="0" class="bt6 bt30">North</tspan><tspan x="0" y="43.2" class="bt6 bt30">Korea</tspan></text>
 	<text transform="matrix(1 0 0 1 923.6543 2066.48)" class="bt4 bt6 bt29">Myanmar</text>
-	<text transform="matrix(1 0 0 1 1396.6979 1335.5095)" class="bt4 bt6 bt31">China</text>
+	<text transform="matrix(1 0 0 1 1349.0625 1405.6433)" class="bt4 bt6 bt31">China</text>
 	<text transform="matrix(1 0 0 1 1311.6544 590.48)" class="bt4 bt6 bt29">Mongolia</text>
 	<text transform="matrix(1 0 0 1 1687.8606 189.5509)" class="bt4 bt6 bt31">Russia</text>
 	<text transform="matrix(1 0 0 1 685.9877 1717.1665)" class="bt4 bt6 bt30">Bhutan</text>
@@ -3585,131 +3585,159 @@ document.getElementById('limit-div').style.height = (window.innerWidth/2905*2313
 	<text transform="matrix(1 0 0 1 2352.6536 2273.1665)" class="bt4 bt6 bt30">Philippines</text>
 </g>
 <g id="modern_cities" class="bt3">
-	<text transform="matrix(1 0 0 1 2397.686 565.6606)" class="bt4 bt8 bt37">Harbin</text>
-	<text transform="matrix(1 0 0 1 2419.9165 673.5101)" class="bt4 bt8 bt37">Jilin</text>
-	<text transform="matrix(1 0 0 1 2640.5481 680.8057)" class="bt4 bt8 bt38">Vladivostok</text>
-	<text transform="matrix(1 0 0 1 1541.1129 559.5011)" class="bt4 bt8 bt37">Ulaanbaatar</text>
-	<circle class="bt39" cx="1567.5" cy="535.4" r="5.2"/>
-	<text transform="matrix(1 0 0 1 2318.8389 700.6189)" class="bt4 bt8 bt37">Changchun</text>
-	<text transform="matrix(1 0 0 1 2269.2549 804.1768)" class="bt4 bt8 bt37">Shenyang</text>
-	<circle class="bt39" cx="2306" cy="811.9" r="6.1"/>
-	<circle class="bt39" cx="2363.8" cy="676.5" r="6.1"/>
-	<circle class="bt39" cx="2405.3" cy="664.6" r="6.1"/>
-	<circle class="bt39" cx="2647.3" cy="652.8" r="6.1"/>
-	<circle class="bt39" cx="2381.6" cy="556.8" r="6.1"/>
-	<circle class="bt39" cx="2078" cy="1640.9" r="6.1"/>
-	<text transform="matrix(1 0 0 1 2084.0769 1664.8048)" class="bt4 bt8 bt37">Nanchang</text>
-	<circle class="bt39" cx="1967.3" cy="1546.2" r="6.1"/>
-	<text transform="matrix(1 0 0 1 1948.181 1567.3785)" class="bt4 bt8 bt37">Wuhan</text>
-	<circle class="bt39" cx="296.2" cy="654.1" r="6.1"/>
+	<text transform="matrix(1 0 0 1 2391.5786 565.6606)" class="bt4 bt8 bt7">Harbin</text>
+	<text transform="matrix(1 0 0 1 2415.3618 670.5101)" class="bt4 bt8 bt7">Jilin</text>
+	<text transform="matrix(1 0 0 1 2640.4465 677.8057)" class="bt4 bt8 bt7">Vladivostok</text>
+	<text transform="matrix(1 0 0 1 1551.0094 554.5011)" class="bt4 bt8 bt7">Ulaanbaatar</text>
+	<circle class="bt37" cx="1567.5" cy="535.4" r="5.2"/>
+	<text transform="matrix(1 0 0 1 2329.0693 696.6189)" class="bt4 bt8 bt7">Changchun</text>
+	<text transform="matrix(1 0 0 1 2278.2627 804.1768)" class="bt4 bt8 bt7">Shenyang</text>
+	<circle class="bt37" cx="2306" cy="811.9" r="6.1"/>
+	<circle class="bt37" cx="2363.8" cy="676.5" r="6.1"/>
+	<circle class="bt37" cx="2405.3" cy="664.6" r="6.1"/>
+	<circle class="bt37" cx="2647.3" cy="652.8" r="6.1"/>
+	<circle class="bt37" cx="2381.6" cy="556.8" r="6.1"/>
+	<circle class="bt37" cx="2078" cy="1640.9" r="6.1"/>
+	<text transform="matrix(1 0 0 1 2077.196 1660.4318)" class="bt4 bt8 bt7">Nanchang</text>
+	<circle class="bt37" cx="1967.3" cy="1546.2" r="6.1"/>
+	<text transform="matrix(1 0 0 1 1969.1855 1561.9319)" class="bt4 bt8 bt7">Wuhan</text>
+	<circle class="bt37" cx="296.2" cy="654.1" r="6.1"/>
 	<text transform="matrix(1 0 0 1 260.0492 645.8237)" class="bt4 bt8 bt7">Almaty</text>
-	<circle class="bt39" cx="487.9" cy="663.4" r="6.1"/>
+	<circle class="bt37" cx="487.9" cy="663.4" r="6.1"/>
 	<text transform="matrix(1 0 0 1 497.2412 658.8522)" class="bt4 bt8 bt7">Yining</text>
-	<circle class="bt39" cx="279.1" cy="427" r="6.1"/>
-	<text transform="matrix(1 0 0 1 286.6837 426.7165)" class="bt4 bt8 bt37">Balqash</text>
-	<circle class="bt39" cx="753.1" cy="722.8" r="5.2"/>
+	<circle class="bt37" cx="279.1" cy="427" r="6.1"/>
+	<text transform="matrix(1 0 0 1 286.6837 426.7165)" class="bt4 bt8 bt38">Balqash</text>
+	<circle class="bt37" cx="753.1" cy="722.8" r="5.2"/>
 	<text transform="matrix(1 0 0 1 753.6509 713.5201)" class="bt4 bt8 bt7">Ürümqi</text>
-	<text transform="matrix(1 0 0 1 1552.8994 2121.8984)" class="bt4 bt8 bt37">Hanoi</text>
-	<circle class="bt39" cx="1812.4" cy="2184.7" r="6.1"/>
-	<circle class="bt39" cx="1386.6" cy="1895.9" r="6.1"/>
-	<text transform="matrix(1 0 0 1 1824.0829 2178.6448)" class="bt4 bt8 bt37">Haikou</text>
-	<text transform="matrix(1 0 0 1 1369.899 1884.9982)" class="bt4 bt8 bt37">Kunming</text>
-	<text transform="matrix(1 0 0 1 1659.5588 2009.2639)" class="bt4 bt8 bt37">Nanning</text>
-	<circle class="bt39" cx="1852.2" cy="1971.2" r="4.9"/>
-	<text transform="matrix(1 0 0 1 1844.0535 1964.4967)" class="bt4 bt8 bt37">Wuzhou</text>
-	<circle class="bt39" cx="1968.3" cy="1982.6" r="4.9"/>
-	<text transform="matrix(1 0 0 1 1946.6902 1976.1061)" class="bt4 bt8 bt37">Guangzhou</text>
-	<circle class="bt39" cx="1689.7" cy="2020.3" r="4.9"/>
-	<circle class="bt39" cx="1549.7" cy="2127.8" r="4.9"/>
-	<circle class="bt39" cx="1453.4" cy="1563" r="5.2"/>
-	<text transform="matrix(1 0 0 1 1446.259 1584.152)" class="bt4 bt8 bt37">Chengdu</text>
-	<circle class="bt39" cx="2053.8" cy="1019.8" r="5.2"/>
-	<circle class="bt39" cx="1597.2" cy="1814.4" r="5.2"/>
-	<text transform="matrix(1 0 0 1 1580.1331 1831.3938)" class="bt4 bt8 bt37">Guiyang</text>
-	<circle class="bt39" cx="1695" cy="1343.1" r="5.2"/>
-	<circle class="bt39" cx="1440.4" cy="1239.8" r="5.2"/>
-	<circle class="bt39" cx="1545.3" cy="1335.5" r="5.2"/>
-	<circle class="bt39" cx="1607.6" cy="1337.9" r="5.2"/>
-	<circle class="bt39" cx="1863.3" cy="1302.5" r="5.2"/>
-	<circle class="bt39" cx="1720.2" cy="1330.3" r="5.2"/>
-	<text transform="matrix(1 0 0 1 1700.3754 1360.1521)" class="bt4 bt8 bt37">Xi’an</text>
-	<text transform="matrix(1 0 0 1 1611.2684 1325.4218)" class="bt4 bt8 bt37">Xianyang</text>
-	<text transform="matrix(1 0 0 1 1574.575 1358.0312)" class="bt4 bt8 bt37">Baoji</text>
-	<text transform="matrix(1 0 0 1 1489.8374 1358.0315)" class="bt4 bt8 bt37">Tianshui</text>
-	<text transform="matrix(1 0 0 1 1727.6472 1337.9187)" class="bt4 bt8 bt37">Weinan</text>
-	<text transform="matrix(1 0 0 1 1444.6906 1260.7644)" class="bt4 bt8 bt7">Lanzhou</text>
-	<circle class="bt39" cx="1032.7" cy="977" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1552.8994 2121.8984)" class="bt4 bt8 bt38">Hanoi</text>
+	<circle class="bt37" cx="1812.4" cy="2184.7" r="6.1"/>
+	<circle class="bt37" cx="1386.6" cy="1895.9" r="6.1"/>
+	<text transform="matrix(1 0 0 1 1824.0829 2178.6448)" class="bt4 bt8 bt38">Haikou</text>
+	<text transform="matrix(1 0 0 1 1377.7916 1887.9982)" class="bt4 bt8 bt7">Kunming</text>
+	<text transform="matrix(1 0 0 1 1677.01 2012.2639)" class="bt4 bt8 bt7">Nanning</text>
+	<circle class="bt37" cx="1852.2" cy="1971.2" r="4.9"/>
+	<text transform="matrix(1 0 0 1 1851.3914 1965.4967)" class="bt4 bt8 bt7">Wuzhou</text>
+	<circle class="bt37" cx="1968.3" cy="1982.6" r="4.9"/>
+	<text transform="matrix(1 0 0 1 1957.032 1976.1061)" class="bt4 bt8 bt7">Guangzhou</text>
+	<circle class="bt37" cx="1689.7" cy="2020.3" r="4.9"/>
+	<circle class="bt37" cx="1549.7" cy="2127.8" r="4.9"/>
+	<circle class="bt37" cx="1453.4" cy="1563" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1450.3782 1580.152)" class="bt4 bt8 bt7">Chengdu</text>
+	<circle class="bt37" cx="2053.8" cy="1019.8" r="5.2"/>
+	<circle class="bt37" cx="1597.2" cy="1814.4" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1587.5823 1831.3938)" class="bt4 bt8 bt7">Guiyang</text>
+	<circle class="bt37" cx="1695" cy="1343.1" r="5.2"/>
+	<circle class="bt37" cx="1440.4" cy="1239.8" r="5.2"/>
+	<circle class="bt37" cx="1545.3" cy="1328.5" r="5.2"/>
+	<circle class="bt37" cx="1607.6" cy="1337.9" r="5.2"/>
+	<circle class="bt37" cx="1863.3" cy="1302.5" r="5.2"/>
+	<circle class="bt37" cx="1720.2" cy="1330.3" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1682.8226 1360.1521)" class="bt4 bt8 bt7">Xi’an</text>
+	<text transform="matrix(1 0 0 1 1621.6083 1331.4218)" class="bt4 bt8 bt7">Xianyang</text>
+	<text transform="matrix(1 0 0 1 1585.0563 1355.0316)" class="bt4 bt8 bt7">Baoji</text>
+	<text transform="matrix(1 0 0 1 1504.5812 1320.0643)" class="bt4 bt8 bt7">Tianshui</text>
+	<text transform="matrix(1 0 0 1 1718.0952 1348.3318)" class="bt4 bt8 bt7">Weinan</text>
+	<text transform="matrix(1 0 0 1 1430.6906 1254.7644)" class="bt4 bt8 bt7">Lanzhou</text>
+	<circle class="bt37" cx="1032.7" cy="977" r="5.2"/>
 	<text transform="matrix(1 0 0 1 1026.5491 966.4717)" class="bt4 bt8 bt7">Dunhuang</text>
-	<text transform="matrix(1 0 0 1 1830.7704 1322.6991)" class="bt4 bt8 bt37">Luoyang</text>
-	<circle class="bt39" cx="812" cy="785.8" r="5.2"/>
-	<text transform="matrix(1 0 0 1 798.6447 801.1868)" class="bt4 bt8 bt7">Turfan</text>
-	<circle class="bt39" cx="337.1" cy="1042.6" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1838.4442 1322.6991)" class="bt4 bt8 bt7">Luoyang</text>
+	<circle class="bt37" cx="812" cy="785.8" r="5.2"/>
+	<text transform="matrix(1 0 0 1 784.3635 780.3393)" class="bt4 bt8 bt7">Turfan</text>
+	<circle class="bt37" cx="337.1" cy="1042.6" r="5.2"/>
 	<text transform="matrix(1 0 0 1 344.5309 1039.4124)" class="bt4 bt8 bt7">Hotan</text>
-	<circle class="bt39" cx="194.9" cy="855.2" r="5.2"/>
+	<circle class="bt37" cx="194.9" cy="855.2" r="5.2"/>
 	<text transform="matrix(1 0 0 1 183.4537 876.079)" class="bt4 bt8 bt7">Kashgar</text>
-	<circle class="bt39" cx="1794" cy="945.8" r="5.2"/>
-	<text transform="matrix(1 0 0 1 1764.9535 966.4718)" class="bt4 bt8 bt37">Hohhot</text>
-	<circle class="bt39" cx="790.1" cy="1575" r="5.2"/>
-	<text transform="matrix(1 0 0 1 785.3342 1593.8051)" class="bt4 bt8 bt37">Lhasa</text>
-	<circle class="bt39" cx="1948.9" cy="1290.8" r="5.2"/>
-	<text transform="matrix(1 0 0 1 1918.4229 1309.9779)" class="bt4 bt8 bt37">Kaifeng</text>
-	<circle class="bt39" cx="994.9" cy="815.2" r="5.2"/>
+	<circle class="bt37" cx="1794" cy="945.8" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1771.4027 966.4718)" class="bt4 bt8 bt7">Hohhot</text>
+	<circle class="bt37" cx="790.1" cy="1575" r="5.2"/>
+	<text transform="matrix(1 0 0 1 785.3342 1593.8051)" class="bt4 bt8 bt38">Lhasa</text>
+	<circle class="bt37" cx="1948.9" cy="1290.8" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1925.2061 1309.9779)" class="bt4 bt8 bt7">Kaifeng</text>
+	<circle class="bt37" cx="994.9" cy="815.2" r="5.2"/>
 	<text transform="matrix(1 0 0 1 983.7477 834.4717)" class="bt4 bt8 bt7">Hami</text>
-	<circle class="bt39" cx="1681.1" cy="1337.9" r="5.2"/>
-	<circle class="bt39" cx="2094.4" cy="1305.8" r="5.2"/>
-	<text transform="matrix(1 0 0 1 2063.9097 1327.4779)" class="bt4 bt8 bt37">Xuzhou</text>
-	<circle class="bt39" cx="2088.2" cy="1344.1" r="5.2"/>
-	<text transform="matrix(1 0 0 1 2057.7039 1368.4779)" class="bt4 bt8 bt37">Suzhou</text>
-	<circle class="bt39" cx="2189" cy="1423.7" r="5.2"/>
-	<text transform="matrix(1 0 0 1 2188.2698 1443.713)" class="bt4 bt8 bt37">Nanjing</text>
-	<circle class="bt39" cx="1918.7" cy="1686.6" r="5.2"/>
-	<text transform="matrix(1 0 0 1 1880.4236 1675.7129)" class="bt4 bt8 bt37">Changsha</text>
-	<text transform="matrix(1 0 0 1 843.8371 949.2217)" class="bt4 bt8 bt37">Lop Nur</text>
-	<circle class="bt39" cx="404.2" cy="811.1" r="6.1"/>
+	<circle class="bt37" cx="1681.1" cy="1337.9" r="5.2"/>
+	<circle class="bt37" cx="2094.4" cy="1305.8" r="5.2"/>
+	<text transform="matrix(1 0 0 1 2100.0261 1305.7715)" class="bt4 bt8 bt7">Xuzhou</text>
+	<circle class="bt37" cx="2088.2" cy="1344.1" r="5.2"/>
+	<text transform="matrix(1 0 0 1 2064.4871 1361.4779)" class="bt4 bt8 bt7">Suzhou</text>
+	<circle class="bt37" cx="2189" cy="1423.7" r="5.2"/>
+	<text transform="matrix(1 0 0 1 2194.053 1433.713)" class="bt4 bt8 bt7">Nanjing</text>
+	<circle class="bt37" cx="1918.7" cy="1686.6" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1912.2546 1679.7129)" class="bt4 bt8 bt7">Changsha</text>
+	<text transform="matrix(1 0 0 1 843.8371 949.2217)" class="bt4 bt8 bt38">Lop Nur</text>
+	<circle class="bt37" cx="404.2" cy="811.1" r="6.1"/>
 	<text transform="matrix(1 0 0 1 388.1377 801.8522)" class="bt4 bt8 bt7">Aksu</text>
-	<circle class="bt39" cx="528.5" cy="805.9" r="5.2"/>
+	<circle class="bt37" cx="528.5" cy="805.9" r="5.2"/>
 	<text transform="matrix(1 0 0 1 513.6005 797.6022)" class="bt4 bt8 bt7">Kuqa</text>
-	<circle class="bt39" cx="1869.5" cy="983.7" r="5.2"/>
-	<text transform="matrix(1 0 0 1 1841.9535 1003.8052)" class="bt4 bt8 bt37">Datong</text>
-	<circle class="bt39" cx="2176.7" cy="854.5" r="6.1"/>
-	<text transform="matrix(1 0 0 1 2148.7578 846.8434)" class="bt4 bt8 bt37">Chaoyang</text>
-	<circle class="bt39" cx="1386.3" cy="1129.2" r="5.2"/>
+	<circle class="bt37" cx="1869.5" cy="983.7" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1848.4027 1003.8052)" class="bt4 bt8 bt7">Datong</text>
+	<circle class="bt37" cx="2176.7" cy="854.5" r="6.1"/>
+	<text transform="matrix(1 0 0 1 2157.877 846.8434)" class="bt4 bt8 bt7">Chaoyang</text>
+	<circle class="bt37" cx="1386.3" cy="1129.2" r="5.2"/>
 	<text transform="matrix(1 0 0 1 1365.3396 1121.1495)" class="bt4 bt8 bt7">Wuwei</text>
-	<circle class="bt39" cx="1289.6" cy="1068.4" r="5.2"/>
+	<circle class="bt37" cx="1289.6" cy="1068.4" r="5.2"/>
 	<text transform="matrix(1 0 0 1 1274.4008 1060.6952)" class="bt4 bt8 bt7">Zhangye</text>
-	<circle class="bt39" cx="1944.7" cy="1185.3" r="5.2"/>
-	<text transform="matrix(1 0 0 1 1909.7365 1178.2798)" class="bt4 bt8 bt37">Handan</text>
-	<circle class="bt39" cx="229.5" cy="932.7" r="5.2"/>
+	<circle class="bt37" cx="1944.7" cy="1185.3" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1916.7423 1179.2798)" class="bt4 bt8 bt7">Handan</text>
+	<circle class="bt37" cx="229.5" cy="932.7" r="5.2"/>
 	<text transform="matrix(1 0 0 1 215.7523 951.4124)" class="bt4 bt8 bt7">Yarkant</text>
-	<circle class="bt39" cx="2011" cy="978.5" r="5.2"/>
-	<text transform="matrix(1 0 0 1 1959.5309 998.0884)" class="bt4 bt8 bt33">Beijing</text>
-	<circle class="bt39" cx="2217.8" cy="1400" r="5.2"/>
-	<text transform="matrix(1 0 0 1 2196.4995 1421.213)" class="bt4 bt8 bt37">Yanzhou</text>
-	<circle class="bt39" cx="2440.9" cy="956.4" r="6.1"/>
-	<text transform="matrix(1 0 0 1 2412.7549 946.1768)" class="bt4 bt8 bt37">Pyongyang</text>
-	<circle class="bt39" cx="193.2" cy="649.1" r="6.1"/>
+	<circle class="bt37" cx="2011" cy="978.5" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1981.5406 994.0884)" class="bt4 bt8 bt7">Beijing</text>
+	<circle class="bt37" cx="2217.8" cy="1400" r="5.2"/>
+	<text transform="matrix(1 0 0 1 2204.396 1391.213)" class="bt4 bt8 bt7">Yanzhou</text>
+	<circle class="bt37" cx="2440.9" cy="956.4" r="6.1"/>
+	<text transform="matrix(1 0 0 1 2422.7627 946.1768)" class="bt4 bt8 bt7">Pyongyang</text>
+	<circle class="bt37" cx="193.2" cy="649.1" r="6.1"/>
 	<text transform="matrix(1 0 0 1 175.932 675.8237)" class="bt4 bt8 bt7">Bishkek</text>
-	<circle class="bt39" cx="66.1" cy="605.6" r="6.1"/>
+	<circle class="bt37" cx="66.1" cy="605.6" r="6.1"/>
 	<text transform="matrix(1 0 0 1 76.8824 611.7137)" class="bt4 bt8 bt7">Taraz</text>
-	<circle class="bt39" cx="2274.2" cy="1516.5" r="5.2"/>
-	<text transform="matrix(1 0 0 1 2243.8682 1506.1403)" class="bt4 bt8 bt37">Hangzhou</text>
-	<text transform="matrix(1 0 0 1 2037.4023 1011.9735)" class="bt4 bt8 bt37">Tianjin</text>
-	<circle class="bt39" cx="2268" cy="1766.8" r="6.1"/>
-	<text transform="matrix(1 0 0 1 2226.9341 1755.9934)" class="bt4 bt8 bt37">Fuzhou</text>
-	<circle class="bt39" cx="1887.7" cy="1573.6" r="6.1"/>
-	<text transform="matrix(1 0 0 1 1860.0018 1565.4784)" class="bt4 bt8 bt37">Jiangling</text>
-	<circle class="bt39" cx="1849.7" cy="1117.3" r="5.2"/>
-	<text transform="matrix(1 0 0 1 1838.9564 1109.7356)" class="bt4 bt8 bt37">Taiyuan</text>
-	<circle class="bt39" cx="1249.3" cy="1858" r="6.1"/>
-	<text transform="matrix(1 0 0 1 1239.9579 1848.6396)" class="bt4 bt8 bt37">Dali</text>
-	<circle class="bt39" cx="1205.3" cy="1016.1" r="5.2"/>
+	<circle class="bt37" cx="2274.2" cy="1516.5" r="5.2"/>
+	<text transform="matrix(1 0 0 1 2240.9873 1508.1403)" class="bt4 bt8 bt7">Hangzhou</text>
+	<text transform="matrix(1 0 0 1 2043.2949 1011.9735)" class="bt4 bt8 bt7">Tianjin</text>
+	<circle class="bt37" cx="2268" cy="1766.8" r="6.1"/>
+	<text transform="matrix(1 0 0 1 2233.604 1758.9934)" class="bt4 bt8 bt7">Fuzhou</text>
+	<circle class="bt37" cx="1887.7" cy="1573.6" r="6.1"/>
+	<text transform="matrix(1 0 0 1 1867.8964 1565.4784)" class="bt4 bt8 bt7">Jiangling</text>
+	<circle class="bt37" cx="1849.7" cy="1117.3" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1846.0717 1109.7356)" class="bt4 bt8 bt7">Taiyuan</text>
+	<circle class="bt37" cx="1249.3" cy="1858" r="6.1"/>
+	<text transform="matrix(1 0 0 1 1243.4032 1848.6396)" class="bt4 bt8 bt7">Dali</text>
+	<circle class="bt37" cx="1205.3" cy="1016.1" r="5.2"/>
 	<text transform="matrix(1 0 0 1 1191.1215 1034.0284)" class="bt4 bt8 bt7">Jiuquan</text>
-	<circle class="bt39" cx="818.2" cy="931.7" r="5.2"/>
-	<text transform="matrix(1 0 0 1 776.7288 921.3606)" class="bt4 bt8 bt7">Loulan</text>
-	<circle class="bt39" cx="29.6" cy="746.3" r="6.1"/>
+	<circle class="bt37" cx="818.2" cy="931.7" r="5.2"/>
+	<text transform="matrix(1 0 0 1 776.7288 925.3606)" class="bt4 bt8 bt7">Loulan</text>
+	<circle class="bt37" cx="29.6" cy="746.3" r="6.1"/>
 	<text transform="matrix(1 0 0 1 13.5594 739.2137)" class="bt4 bt8 bt7">Fergana</text>
-	<circle class="bt39" cx="687.7" cy="828.2" r="5.2"/>
+	<circle class="bt37" cx="687.7" cy="828.2" r="5.2"/>
 	<text transform="matrix(1 0 0 1 647.1794 820.3999)" class="bt4 bt8 bt7">Yanqi</text>
+	<circle class="bt37" cx="1346.4" cy="1205.2" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1326.8937 1197.4828)" class="bt4 bt8 bt7">Xining</text>
+	<circle class="bt37" cx="1944.7" cy="1158.5" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1922.7648 1149.2086)" class="bt4 bt8 bt7">Xingtai</text>
+	<circle class="bt37" cx="1812.5" cy="988.9" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1763.1022 1003.4719)" class="bt4 bt8 bt7">Shengle</text>
+	<circle class="bt37" cx="1884.3" cy="1214.6" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1838.4949 1208.2798)" class="bt4 bt8 bt7">Changzhi</text>
+	<circle class="bt37" cx="1979.2" cy="1045.8" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1965.6746 1039.2893)" class="bt4 bt8 bt7">Baoding</text>
+	<circle class="bt37" cx="2210.7" cy="874.3" r="6.1"/>
+	<text transform="matrix(1 0 0 1 2164.0471 887.7206)" class="bt4 bt8 bt7">Jinzhou</text>
+	<circle class="bt37" cx="1461.7" cy="1212.5" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1431.9098 1206.2146)" class="bt4 bt8 bt7">Baiyin</text>
+	<circle class="bt37" cx="1685.3" cy="1181.3" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1643.3668 1174.3923)" class="bt4 bt8 bt7">Tongwancheng</text>
+	<circle class="bt37" cx="1577.7" cy="1270.8" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1583.4979 1275.3923)" class="bt4 bt8 bt7">Pingliang</text>
+	<circle class="bt37" cx="1786.7" cy="1144.3" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1784.6764 1137.613)" class="bt4 bt8 bt7">Lüliang</text>
+	<circle class="bt37" cx="1810.5" cy="1226" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1788.1791 1217.6925)" class="bt4 bt8 bt7">Linfen</text>
+	<circle class="bt37" cx="825" cy="793.8" r="5.2"/>
+	<text transform="matrix(1 0 0 1 808.0927 809.9872)" class="bt4 bt8 bt7">Gaochang</text>
+	<circle class="bt37" cx="1938.5" cy="1227" r="5.2"/>
+	<text transform="matrix(1 0 0 1 1925.5509 1241.6519)" class="bt4 bt8 bt7">Hebi</text>
+	<circle class="bt37" cx="2129.5" cy="1153.3" r="5.2"/>
+	<text transform="matrix(1 0 0 1 2108.0413 1146.6538)" class="bt4 bt8 bt7">Qingzhou</text>
 </g>
 
 
@@ -4039,7 +4067,7 @@ document.getElementById('limit-div').style.height = (window.innerWidth/2905*2313
 <text font-weight="700" font-family="'Myriad Pro', Arial, sans-serif" fill="#231f20" font-size="200px" color="black" text-anchor="end" transform="translate(850 154)">260<tspan font-size="72px" x="100" y="0">CE</tspan></text><a xlink:href="index#thumbnails"><path fill="#4D4D4F" d="M715.2,242.4l-0.2,61.1c0,5.3,4.3,8.4,12.8,9.5v5l-53.4,0.1v-4.9c4.2,0,7.4-0.8,9.7-2.3
 		c2.3-1.5,3.4-3.7,3.4-6.5v-41.7c0-5.3-4.3-8.5-13-9.5l0.1-6.2L715.2,242.4z M701.4,204.7c4,0,7.4,1.4,10.1,4.1
 		c2.7,2.7,4.1,6.1,4.1,10.2c0,3.9-1.4,7.2-4.1,10c-2.7,2.7-6,4.1-9.8,4.1c-4.2,0-7.6-1.3-10.4-3.8s-4.1-5.8-4.1-9.7
-		c0-4.4,1.3-7.9,4-10.7C693.8,206.1,697.2,204.7,701.4,204.7z"/></a><a xlink:href="BCE_90.svg"><path color="black" d="M622,206c-11.92,11.92-61.88,65-61.88,65s51.37,52.46,63.81,64.9V208"/></a><a xlink:href="CE_400.svg"><path color="black" d="M781.41,333.92c11.92-11.92,61.88-65,61.88-65s-51.37-51.46-63.81-63.9V331.94"/></a>
+		c0-4.4,1.3-7.9,4-10.7C693.8,206.1,697.2,204.7,701.4,204.7z"/></a><a xlink:href="BCE_90.svg"><path color="black" d="M622,206c-11.92,11.92-61.88,65-61.88,65s51.37,52.46,63.81,64.9V208"/></a><a xlink:href="CE_280.svg"><path color="black" d="M781.41,333.92c11.92-11.92,61.88-65,61.88-65s-51.37-51.46-63.81-63.9V331.94"/></a>
 <style type="text/css">
 	.big { fill: transparent; font-size: 72px; font-family:'Myriad Pro','Helvetica Neue', Helvetica,Arial,sans-serif; cursor: pointer; }
 	a:hover > .big { fill:#8B5E3C;  }
@@ -4051,8 +4079,13 @@ document.getElementById('limit-div').style.height = (window.innerWidth/2905*2313
 </style> 
 <a xlink:href="BCE_90.svg"><path class="maprange" d="M 2875,0 l 30,0 l 0,10 l -30,0 z"/><text x="2650" y="100" class="big">&#xA0;&#xA0;-90</text></a>
 <a xlink:href="CE_260.svg"><path class="maprange" d="M 2875,10 l 30,0 l 0,350 l -30,0 z"/><text x="2650" y="360" class="big">&#xA0;&#xA0;260</text></a>
-<a xlink:href="CE_400.svg"><path class="maprange" d="M 2875,360 l 30,0 l 0,140 l -30,0 z"/><text x="2650" y="500" class="big">&#xA0;&#xA0;400</text></a>
-<a xlink:href="CE_560.svg"><path class="maprange" d="M 2875,500 l 30,0 l 0,160 l -30,0 z"/><text x="2650" y="660" class="big">&#xA0;&#xA0;560</text></a>
+<a xlink:href="CE_280.svg"><path class="maprange" d="M 2875,360 l 30,0 l 0,20 l -30,0 z"/><text x="2650" y="380" class="big">&#xA0;&#xA0;280</text></a>
+<a xlink:href="CE_360.svg"><path class="maprange" d="M 2875,380 l 30,0 l 0,80 l -30,0 z"/><text x="2650" y="460" class="big">&#xA0;&#xA0;360</text></a>
+<a xlink:href="CE_383.svg"><path class="maprange" d="M 2875,460 l 30,0 l 0,23 l -30,0 z"/><text x="2650" y="483" class="big">&#xA0;&#xA0;383</text></a>
+<a xlink:href="CE_400.svg"><path class="maprange" d="M 2875,483 l 30,0 l 0,17 l -30,0 z"/><text x="2650" y="500" class="big">&#xA0;&#xA0;400</text></a>
+<a xlink:href="CE_440.svg"><path class="maprange" d="M 2875,500 l 30,0 l 0,40 l -30,0 z"/><text x="2650" y="540" class="big">&#xA0;&#xA0;440</text></a>
+<a xlink:href="CE_500.svg"><path class="maprange" d="M 2875,540 l 30,0 l 0,60 l -30,0 z"/><text x="2650" y="600" class="big">&#xA0;&#xA0;500</text></a>
+<a xlink:href="CE_560.svg"><path class="maprange" d="M 2875,600 l 30,0 l 0,60 l -30,0 z"/><text x="2650" y="660" class="big">&#xA0;&#xA0;560</text></a>
 <a xlink:href="CE_750.svg"><path class="maprange" d="M 2875,660 l 30,0 l 0,190 l -30,0 z"/><text x="2650" y="850" class="big">&#xA0;&#xA0;750</text></a>
 <a xlink:href="CE_944.svg"><path class="maprange" d="M 2875,850 l 30,0 l 0,194 l -30,0 z"/><text x="2650" y="1044" class="big">&#xA0;&#xA0;944</text></a>
 	<path class="options" d="M 20,1950 l 215,0 l 0,330 l -215,0 z"/>
