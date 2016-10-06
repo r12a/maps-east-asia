@@ -69,3 +69,6 @@ h2 a {
 svg {
 	cursor: move;
 	}
+#options a {
+	color: #aa896b; cursor:pointer; text-decoration:none;
+	}

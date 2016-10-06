@@ -114,8 +114,10 @@ eot;
 
 
 $htmlOptions = <<<eot
-<div id="options">
-<p>Options: &nbsp; <span class="option" onclick="
+<div id="options" style="display:flex; flex-flow: row nowrap;">
+<p style="flex:2;">&nbsp;</p>
+<p style="text-align:center; flex: 1;">prevPlaceholder nextPlaceholder</p>
+<p style="flex:2;">Options: &nbsp; <span class="option" onclick="
 	if(document.getElementById('bitmap').style.display!='none'){
 	document.getElementById('bitmap').style.display='none';
 	document.getElementById('coastlines').style.opacity='1';
@@ -187,6 +189,7 @@ if(isset($_GET['dates']) && $_GET['dates'] != '') {
         	$datearray[$ptr++] = $year;
         	}
     	}
+        print_r($datearray);
 	$sourcePath = '../svg_raw/';
 	$targetPath = '../svg/';
 	
@@ -229,18 +232,18 @@ if(isset($_GET['dates']) && $_GET['dates'] != '') {
 			}
 
 
-    $message .= $stylingBlock;
-    
-    // do timeline
-    // starts at 100BCE, so add 100 to each figure
-    $message .= "\n";
-    foreach ($yeargroup as $year => $val) {
-        $message .= '<a xlink:href="';
-        if ($year < 0) $message .= 'BCE_';
-        else $message .= 'CE_';
-        if ($val[0] == 0) $message .= abs($year).'.svg"><path class="maprange" d="M 2875,0 l 30,0 l 0,'.(($year-$val[0])+100).' l -30,0 z"/><text x="2650" y="100" class="big">&#xA0;&#xA0;'.$year.'</text></a>'."\n";
-        else $message .= abs($year).'.svg"><path class="maprange" d="M 2875,'.($val[0]+100).' l 30,0 l 0,'.($year-$val[0]).' l -30,0 z"/><text x="2650" y="'.($year+100).'" class="big">&#xA0;&#xA0;'.$year.'</text></a>'."\n";
-        }
+        $message .= $stylingBlock;
+        
+        // do timeline
+        // starts at 100BCE, so add 100 to each figure
+        $message .= "\n";
+        foreach ($yeargroup as $year => $val) {
+            $message .= '<a xlink:href="';
+            if ($year < 0) $message .= 'BCE_';
+            else $message .= 'CE_';
+            if ($val[0] == 0) $message .= abs($year).'.svg"><path class="maprange" d="M 2875,0 l 30,0 l 0,'.(($year-$val[0])+100).' l -30,0 z"/><text x="2650" y="100" class="big">&#xA0;&#xA0;'.$year.'</text></a>'."\n";
+            else $message .= abs($year).'.svg"><path class="maprange" d="M 2875,'.($val[0]+100).' l 30,0 l 0,'.($year-$val[0]).' l -30,0 z"/><text x="2650" y="'.($year+100).'" class="big">&#xA0;&#xA0;'.$year.'</text></a>'."\n";
+            }
     
     
         $message .= $optionMenu;
@@ -299,7 +302,40 @@ if(isset($_GET['dates']) && $_GET['dates'] != '') {
         
         // add the SVG text
         $enclosingDiv = '<div id="limit-div" style="width: 100%; height: 1000px;">'."\n";
-		$htmltext = preg_replace('/<svg><\/svg>/',$enclosingDiv.$newsvgtext.'</div>'.$htmlOptions,$htmltext);
+        
+        // prepare links to surrounding maps
+        $htmlInsert = $htmlOptions;
+
+		$targetEra = abs($yeargroup[$datearray[$i]][0]).'CE'; $targetLink = 'CE_'.abs($yeargroup[$datearray[$i]][0]);
+		if ($yeargroup[$datearray[$i]][0] < 0) { $targetEra = abs($yeargroup[$datearray[$i]][0]).'BCE'; $targetLink = 'BCE_'.abs($yeargroup[$datearray[$i]][0]); }
+		if ($yeargroup[$datearray[$i]][0] != 0) $mapLink = '<a href="'.$targetLink.'">'.$targetEra.' ◀</a>';
+        else { $mapLink = ''; }
+        $htmlInsert = preg_replace('/prevPlaceholder/',$mapLink,$htmlInsert);
+        
+		$targetEra = abs($yeargroup[$datearray[$i]][1]).'CE'; $targetLink = 'CE_'.abs($yeargroup[$datearray[$i]][1]);
+		if ($yeargroup[$datearray[$i]][1] < 0) { $targetEra = abs($yeargroup[$datearray[$i]][1]).'BCE'; $targetLink = 'BCE_'.abs($yeargroup[$datearray[$i]][1]); }
+		if ($yeargroup[$datearray[$i]][1] != 0) $mapLink = '<a href="'.$targetLink.'">▶ '.$targetEra.'</a>';
+        else { $mapLink = ''; }
+        $htmlInsert = preg_replace('/nextPlaceholder/',$mapLink,$htmlInsert);
+        
+        
+        
+        
+        
+		//if ($yeargroup[$datearray[$i]][0] != 0) {
+        //    $htmlInsert = preg_replace('/prevPlaceholder/',abs($yeargroup[$datearray[$i]][0]).$targetEra,$htmlInsert);
+       //     $htmlInsert = preg_replace('/prevLink/',$targetLink.abs($yeargroup[$datearray[$i]][0]),$htmlInsert);
+		//	}
+        // else {  }
+		//$targetEra = 'CE'; $targetLink = 'CE_';
+		//if ($yeargroup[$datearray[$i]][1] < 0) { $targetEra = 'BCE'; $targetLink = 'BCE_'; }
+		//if ($yeargroup[$datearray[$i]][1] != 0) {
+        //    $htmlInsert = preg_replace('/nextPlaceholder/',abs($yeargroup[$datearray[$i]][1]).$targetEra,$htmlInsert);
+        //    $htmlInsert = preg_replace('/nextLink/',$targetLink.abs($yeargroup[$datearray[$i]][1]),$htmlInsert);
+	//		}
+
+        
+		$htmltext = preg_replace('/<svg><\/svg>/',$enclosingDiv.$newsvgtext.'</div>'.$htmlInsert,$htmltext);
 		$htmltext = preg_replace('/<\?xml version="1\.0" encoding="utf-8"\?>/','',$htmltext);
 		$htmltext = preg_replace('/<svg /','<svg id="limit-svg"  ',$htmltext);
 		$htmltext = preg_replace('/style="enable-background:/','style="enable-background:new 0 0 2905.1 2313; display: inline; width: inherit; min-width: inherit; max-width: inherit; height: inherit; min-height: inherit; max-height: inherit; enable-background:',$htmltext);
