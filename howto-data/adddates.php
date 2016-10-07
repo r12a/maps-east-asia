@@ -10,8 +10,9 @@ $yeargroup[360] = [280,383];
 $yeargroup[383] = [360,400];
 $yeargroup[400] = [383,440];
 $yeargroup[440] = [400,500];
-$yeargroup[500] = [440,560];
-$yeargroup[560] = [500,750];
+$yeargroup[500] = [440,535];
+$yeargroup[535] = [500,560];
+$yeargroup[560] = [535,750];
 $yeargroup[750] = [560,944];
 $yeargroup[944] = [750,0];
 
