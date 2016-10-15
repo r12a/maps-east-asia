@@ -4148,19 +4148,20 @@ document.getElementById('limit-div').style.height = (window.innerWidth/2905*2313
 	.maprange { fill:#A97C50; stroke:white; }
 	.options { fill:#aa896b; stroke:white; }
 </style> 
-<a xlink:href="BCE_90.svg"><path class="maprange" d="M 2875,0 l 30,0 l 0,10 l -30,0 z"/><text x="2650" y="100" class="big">&#xA0;&#xA0;-90</text></a>
-<a xlink:href="CE_260.svg"><path class="maprange" d="M 2875,10 l 30,0 l 0,350 l -30,0 z"/><text x="2650" y="360" class="big">&#xA0;&#xA0;260</text></a>
-<a xlink:href="CE_280.svg"><path class="maprange" d="M 2875,360 l 30,0 l 0,20 l -30,0 z"/><text x="2650" y="380" class="big">&#xA0;&#xA0;280</text></a>
-<a xlink:href="CE_360.svg"><path class="maprange" d="M 2875,380 l 30,0 l 0,80 l -30,0 z"/><text x="2650" y="460" class="big">&#xA0;&#xA0;360</text></a>
-<a xlink:href="CE_383.svg"><path class="maprange" d="M 2875,460 l 30,0 l 0,23 l -30,0 z"/><text x="2650" y="483" class="big">&#xA0;&#xA0;383</text></a>
-<a xlink:href="CE_400.svg"><path class="maprange" d="M 2875,483 l 30,0 l 0,17 l -30,0 z"/><text x="2650" y="500" class="big">&#xA0;&#xA0;400</text></a>
-<a xlink:href="CE_440.svg"><path class="maprange" d="M 2875,500 l 30,0 l 0,40 l -30,0 z"/><text x="2650" y="540" class="big">&#xA0;&#xA0;440</text></a>
-<a xlink:href="CE_500.svg"><path class="maprange" d="M 2875,540 l 30,0 l 0,60 l -30,0 z"/><text x="2650" y="600" class="big">&#xA0;&#xA0;500</text></a>
-<a xlink:href="CE_535.svg"><path class="maprange" d="M 2875,600 l 30,0 l 0,35 l -30,0 z"/><text x="2650" y="635" class="big">&#xA0;&#xA0;535</text></a>
-<a xlink:href="CE_560.svg"><path class="maprange" d="M 2875,635 l 30,0 l 0,25 l -30,0 z"/><text x="2650" y="660" class="big">&#xA0;&#xA0;560</text></a>
-<a xlink:href="CE_610.svg"><path class="maprange" d="M 2875,660 l 30,0 l 0,50 l -30,0 z"/><text x="2650" y="710" class="big">&#xA0;&#xA0;610</text></a>
-<a xlink:href="CE_750.svg"><path class="maprange" d="M 2875,710 l 30,0 l 0,140 l -30,0 z"/><text x="2650" y="850" class="big">&#xA0;&#xA0;750</text></a>
-<a xlink:href="CE_944.svg"><path class="maprange" d="M 2875,850 l 30,0 l 0,194 l -30,0 z"/><text x="2650" y="1044" class="big">&#xA0;&#xA0;944</text></a>
+<a xlink:href="BCE_140.svg"><path class="maprange" d="M 2875,0 l 30,0 l 0,60 l -30,0 z"/><text x="2650" y="100" class="big">&#xA0;&#xA0;-140</text></a>
+<a xlink:href="BCE_90.svg"><path class="maprange" d="M 2875,60 l 30,0 l 0,50 l -30,0 z"/><text x="2650" y="110" class="big">&#xA0;&#xA0;-90</text></a>
+<a xlink:href="CE_260.svg"><path class="maprange" d="M 2875,110 l 30,0 l 0,350 l -30,0 z"/><text x="2650" y="460" class="big">&#xA0;&#xA0;260</text></a>
+<a xlink:href="CE_280.svg"><path class="maprange" d="M 2875,460 l 30,0 l 0,20 l -30,0 z"/><text x="2650" y="480" class="big">&#xA0;&#xA0;280</text></a>
+<a xlink:href="CE_360.svg"><path class="maprange" d="M 2875,480 l 30,0 l 0,80 l -30,0 z"/><text x="2650" y="560" class="big">&#xA0;&#xA0;360</text></a>
+<a xlink:href="CE_383.svg"><path class="maprange" d="M 2875,560 l 30,0 l 0,23 l -30,0 z"/><text x="2650" y="583" class="big">&#xA0;&#xA0;383</text></a>
+<a xlink:href="CE_400.svg"><path class="maprange" d="M 2875,583 l 30,0 l 0,17 l -30,0 z"/><text x="2650" y="600" class="big">&#xA0;&#xA0;400</text></a>
+<a xlink:href="CE_440.svg"><path class="maprange" d="M 2875,600 l 30,0 l 0,40 l -30,0 z"/><text x="2650" y="640" class="big">&#xA0;&#xA0;440</text></a>
+<a xlink:href="CE_500.svg"><path class="maprange" d="M 2875,640 l 30,0 l 0,60 l -30,0 z"/><text x="2650" y="700" class="big">&#xA0;&#xA0;500</text></a>
+<a xlink:href="CE_535.svg"><path class="maprange" d="M 2875,700 l 30,0 l 0,35 l -30,0 z"/><text x="2650" y="735" class="big">&#xA0;&#xA0;535</text></a>
+<a xlink:href="CE_560.svg"><path class="maprange" d="M 2875,735 l 30,0 l 0,25 l -30,0 z"/><text x="2650" y="760" class="big">&#xA0;&#xA0;560</text></a>
+<a xlink:href="CE_610.svg"><path class="maprange" d="M 2875,760 l 30,0 l 0,50 l -30,0 z"/><text x="2650" y="810" class="big">&#xA0;&#xA0;610</text></a>
+<a xlink:href="CE_750.svg"><path class="maprange" d="M 2875,810 l 30,0 l 0,140 l -30,0 z"/><text x="2650" y="950" class="big">&#xA0;&#xA0;750</text></a>
+<a xlink:href="CE_944.svg"><path class="maprange" d="M 2875,950 l 30,0 l 0,194 l -30,0 z"/><text x="2650" y="1144" class="big">&#xA0;&#xA0;944</text></a>
 	<path class="options" d="M 20,1950 l 215,0 l 0,330 l -215,0 z"/>
 	<text transform="translate(40 2000)" class="selectors" style="fill:#d8d31e;">Options:</text>
 	<text transform="translate(40 2060)" class="selectors" onclick="

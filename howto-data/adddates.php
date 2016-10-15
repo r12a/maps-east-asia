@@ -3,7 +3,8 @@
 # THIS IS FOR THE FAREAST MAP
 
 $yeargroup = [];
-$yeargroup[-90] = [0,260];
+$yeargroup[-140] = [0,-90];
+$yeargroup[-90] = [-140,260];
 $yeargroup[260] = [-90,280];
 $yeargroup[280] = [260,360];
 $yeargroup[360] = [280,383];
@@ -237,14 +238,14 @@ if(isset($_GET['dates']) && $_GET['dates'] != '') {
         $message .= $stylingBlock;
         
         // do timeline
-        // starts at 100BCE, so add 100 to each figure
+        // starts at 200BCE, so add 200 to each figure
         $message .= "\n";
         foreach ($yeargroup as $year => $val) {
             $message .= '<a xlink:href="';
             if ($year < 0) $message .= 'BCE_';
             else $message .= 'CE_';
-            if ($val[0] == 0) $message .= abs($year).'.svg"><path class="maprange" d="M 2875,0 l 30,0 l 0,'.(($year-$val[0])+100).' l -30,0 z"/><text x="2650" y="100" class="big">&#xA0;&#xA0;'.$year.'</text></a>'."\n";
-            else $message .= abs($year).'.svg"><path class="maprange" d="M 2875,'.($val[0]+100).' l 30,0 l 0,'.($year-$val[0]).' l -30,0 z"/><text x="2650" y="'.($year+100).'" class="big">&#xA0;&#xA0;'.$year.'</text></a>'."\n";
+            if ($val[0] == 0) $message .= abs($year).'.svg"><path class="maprange" d="M 2875,0 l 30,0 l 0,'.(($year-$val[0])+200).' l -30,0 z"/><text x="2650" y="100" class="big">&#xA0;&#xA0;'.$year.'</text></a>'."\n";
+            else $message .= abs($year).'.svg"><path class="maprange" d="M 2875,'.($val[0]+200).' l 30,0 l 0,'.($year-$val[0]).' l -30,0 z"/><text x="2650" y="'.($year+200).'" class="big">&#xA0;&#xA0;'.$year.'</text></a>'."\n";
             }
     
     
