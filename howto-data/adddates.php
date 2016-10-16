@@ -119,7 +119,7 @@ eot;
 
 $htmlOptions = <<<eot
 <div id="options" style="display:flex; flex-flow: row nowrap;">
-<p style="flex:2;">&nbsp;</p>
+<p style="text-align:left; margin-left: 1em; flex:2;"><a href="https://r12a.github.io/maplist">maps</a> &gt; <a href="index">east asia</a></p>
 <p style="text-align:center; flex: 1;">prevPlaceholder nextPlaceholder</p>
 <p style="flex:2;">Options: &nbsp; <span class="option" onclick="
 	if(document.getElementById('bitmap').style.display!='none'){
