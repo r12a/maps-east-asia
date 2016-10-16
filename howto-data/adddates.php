@@ -14,8 +14,9 @@ $yeargroup[440] = [400,500];
 $yeargroup[500] = [440,535];
 $yeargroup[535] = [500,560];
 $yeargroup[560] = [535,610];
-$yeargroup[610] = [560,750];
-$yeargroup[750] = [610,944];
+$yeargroup[610] = [560,630];
+$yeargroup[630] = [610,750];
+$yeargroup[750] = [630,944];
 $yeargroup[944] = [750,0];
 
 $heightSetting = <<<eot

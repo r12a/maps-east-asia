@@ -4420,7 +4420,8 @@ document.getElementById('limit-div').style.height = (window.innerWidth/2905*2313
 <a xlink:href="CE_535.svg"><path class="maprange" d="M 2875,700 l 30,0 l 0,35 l -30,0 z"/><text x="2650" y="735" class="big">&#xA0;&#xA0;535</text></a>
 <a xlink:href="CE_560.svg"><path class="maprange" d="M 2875,735 l 30,0 l 0,25 l -30,0 z"/><text x="2650" y="760" class="big">&#xA0;&#xA0;560</text></a>
 <a xlink:href="CE_610.svg"><path class="maprange" d="M 2875,760 l 30,0 l 0,50 l -30,0 z"/><text x="2650" y="810" class="big">&#xA0;&#xA0;610</text></a>
-<a xlink:href="CE_750.svg"><path class="maprange" d="M 2875,810 l 30,0 l 0,140 l -30,0 z"/><text x="2650" y="950" class="big">&#xA0;&#xA0;750</text></a>
+<a xlink:href="CE_630.svg"><path class="maprange" d="M 2875,810 l 30,0 l 0,20 l -30,0 z"/><text x="2650" y="830" class="big">&#xA0;&#xA0;630</text></a>
+<a xlink:href="CE_750.svg"><path class="maprange" d="M 2875,830 l 30,0 l 0,120 l -30,0 z"/><text x="2650" y="950" class="big">&#xA0;&#xA0;750</text></a>
 <a xlink:href="CE_944.svg"><path class="maprange" d="M 2875,950 l 30,0 l 0,194 l -30,0 z"/><text x="2650" y="1144" class="big">&#xA0;&#xA0;944</text></a>
 	<path class="options" d="M 20,1950 l 215,0 l 0,330 l -215,0 z"/>
 	<text transform="translate(40 2000)" class="selectors" style="fill:#d8d31e;">Options:</text>
